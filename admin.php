@@ -5,14 +5,14 @@
 * author: Max Istlyaev aka FladeX
 * e-mail: FladeX@yandex.ru
 * file: admin.php
-* last update: 2011.10.16
+* last update: 2011.11.13
 **/
 session_start();
+include('config.php');
 include('db.php');
 include('functions.php');
 include('classes/Forum.php');
 include('classes/Category.php');
-define('SMARTY_DIR', '/var/www/fladex/data/www/forumcatalog.ru/classes/smarty/');
 include('classes/smarty/Smarty.class.php');
 
 global $sape;
@@ -21,10 +21,10 @@ $sape_links = $sape->return_links();
 $forum = new Forum;
 $smarty = new Smarty();
 
-$smarty->template_dir = '/var/www/fladex/data/www/forumcatalog.ru/temp/templates/';
-$smarty->compile_dir = '/var/www/fladex/data/www/forumcatalog.ru/temp/templates_c/';
-$smarty->config_dir = '/var/www/fladex/data/www/forumcatalog.ru/temp/configs/';
-$smarty->cache_dir = '/var/www/fladex/data/www/forumcatalog.ru/temp/cache/';
+$smarty->template_dir = SMARTY_TEMPLATE_DIR;
+$smarty->compile_dir = SMARTY_COMPILE_DIR;
+$smarty->config_dir = SMARTY_CONFIG_DIR;
+$smarty->cache_dir = SMARTY_CACHE_DIR;
 
 $recent_forums = $forum->display_recent_forums();
 

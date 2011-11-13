@@ -1,7 +1,16 @@
-.gitignore
+# .gitignore
 # cache files
 cache/*
+temp/templates_c/*.php
 !cache/index.html
+!temp/cache/*
+
+# backup files
+*~
+
+# sape
+22b9*
+27e0*
 
 # local config
 db.php

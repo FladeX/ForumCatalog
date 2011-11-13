@@ -1,5 +1,12 @@
 <?php
 
+// Smarty
+define('SMARTY_DIR', '/www/fc/classes/smarty/');
+define('SMARTY_TEMPLATE_DIR', '/www/fc/temp/templates/');
+define('SMARTY_COMPILE_DIR', '/www/fc/temp/templates_c/');
+define('SMARTY_CONFIG_DIR', '/www/fc/temp/configs/');
+define('SMARTY_CACHE_DIR', '/www/fc/temp/cache/');
+
 /* Скрипт поиска по сайту на основе Яндекс.XML.
    php-MyAdmin.ru/learning/search.html 0.6 (utf-8). 28.11.2010
    */
