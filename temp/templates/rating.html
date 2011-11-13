@@ -1,0 +1,21 @@
+{include file="header.html" title=$title}
+
+                                    <div class="news">
+                                           <h1>Рейтинг форумов</h1>
+                                           <div class="item">
+                                                   <p>Приведённый здесь <strong>рейтинг форумов</strong> &mdash; это подборка {$top_forums.limit} форумов из каталога, имеющих самый большой рейтинг. Каждый из размещённых в каталоге форумов характеризуется рейтингом, который ему присваивают посетители. Чем выше значение рейтинга &mdash; тем выше форум в этом рейтинге.</p>
+                                                   <h2>Лучшие {$top_forums.limit}</h2>
+                                                   <ol>
+                                                    {foreach from=$top_forums.forum item=forum name=forum}
+                                                        {if $smarty.foreach.forum.iteration % 2 == 1}
+                                                            <li class="row1">
+                                                        {else}
+                                                            <li class="row2">
+                                                        {/if}
+                                                                <a href="http://forumcatalog.ru/forum{$forum.id}/">{$forum.title}</a> <span title="рейтинг форума">[&nbsp;<b style="color:green;">{$forum.rating}</b>&nbsp;]</span>
+                                                            </li>
+                                                    {/foreach}
+                                           </ol>
+                                           </div>
+
+{include file="footer.html"}

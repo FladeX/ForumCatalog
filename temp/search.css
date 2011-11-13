@@ -1,0 +1,96 @@
+/* Скрипт поиска по сайту на основе Яндекс.XML.
+   php-MyAdmin.ru/learning/search.html (utf-8).
+   */
+
+/* Контейнер результатов поиска. */
+div.search_div {
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+/* Строка ошибки. */
+div.search_error {
+    font-size: 11px;
+}
+/* Строка результата найденных страниц. */
+div.search_notice {
+    font-size: 11px;
+    padding-top: 8px;
+}
+/* Контейнер списка. */
+ol.search_ol {
+
+}
+/* Элементы списка. */
+li.search_li {
+    margin-bottom: 10px;
+}
+/* Контейнер заголовка найденного. */
+div.search_title_div {
+
+}
+/* Ссылка заголовка найденного. */
+a.search_title_a {
+    color: #164782;
+    text-decoration: underline;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+/* Ссылка заголовка найденного при наведении курсора. */
+a.search_title_a:hover {
+    text-decoration: none;
+}
+/* Контейнер текста найденного. */
+div.search_passage {
+    color: #2d2d2d;
+}
+/* Контейнер ссылки страницы найденного. */
+div.search_url {
+    color: #5e5e5e;
+    margin-top: 4px;
+}
+/* Выделение искомого в тексте. */
+span.search_hlword {
+    font-weight: bold;
+}
+/* Верхняя часть блока перелистывания. */
+div.search_page_top {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #666699;
+}
+/* Ссылки перелистывания. */
+a.search_page_a {
+    color: #164782;
+    text-decoration: underline;
+    font-family: Tahoma;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+/* Ссылки перелистывания при наведении курсора. */
+a.search_page_a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+/* Приглушенная надпись перелистывания. */
+span.search_page_span {
+    color: gray;
+    font-family: Tahoma;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+/* Нижняя часть блока перелистывания. */
+div.search_page_bottom {
+    margin-top: 5px;
+}
+/* Текущая страница в блоке перелистывания. */
+span.search_page_now {
+    background-color: #d6d6de;
+    color: #164782;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 5px;
+}

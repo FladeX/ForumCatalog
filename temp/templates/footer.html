@@ -1,0 +1,62 @@
+					</div>
+				</div>
+			</div>
+			<div class="side">
+				<div class="box tbox">
+					<div class="box_top">
+						<div class="box_bottom">
+							<h3><!--Последние добавленные--></h3>
+							<div class="lastadded">
+								<ul>
+                                                                        {foreach from=$recent_forums item=forum}
+                                                                            <li><a href="../forum{$forum.id}/">{$forum.title}</a></li>
+                                                                        {/foreach}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box bbox">
+					<div class="box_top">
+						<div class="box_bottom">
+							<h3><!--Реклама--></h3>
+							<div class="counters">
+								<a href="http://forumadmins.ru/?r=2" rel="nofollow"><img src="http://forumadmins.ru/images/b/88_31.gif" alt="Форум про форумы" /></a>
+								<a href="http://forummap.ru/" rel="nofollow"><img src="http://forummap.ru/media/88_31.png" alt="Сервис генерации sitemap для форумов" /></a>
+								<br><br>
+								<a href="http://forumstat.ru/" rel="nofollow"><img src="http://forumstat.ru/images/b88-31.gif" alt="Сервис сбора статистики с форумов" /></a>
+								<!--LiveInternet counter--><script type="text/javascript"><!--
+								document.write("<a href='http://www.liveinternet.ru/click' rel='nofollow' "+
+								"target=_blank><img src='http://counter.yadro.ru/hit?t57.11;r"+
+								escape(document.referrer)+((typeof(screen)=="undefined")?"":
+								";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+								screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+								";"+Math.random()+
+								"' alt='' title='LiveInternet' "+
+								"border='0' width='88' height='31'><\/a>")
+								//--></script><!--/LiveInternet-->
+							</div>
+							<div class="adv">
+								<ul>
+									<li>
+										{$sape_links}
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="inner">
+		<span>Дизайн от Sentro Internet Technology</span>
+		Самый специализированный белый каталог форумов в рунете.<br /> &copy; 2009&ndash;2011 &laquo;Форум&nbsp;Студио&raquo;
+	</div>
+</div>
+
+</body>
+</html>

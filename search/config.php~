@@ -1,0 +1,21 @@
+<?php
+
+/* Скрипт поиска по сайту на основе Яндекс.XML.
+   php-MyAdmin.ru/learning/search.html 0.6 (utf-8). 28.11.2010
+   */
+
+/* IP сервера. Должен быть зарегистрирован на странице http://xml.yandex.ru/settings.xml
+   */
+$aLocal['ip'] = '';
+
+/* Ваш адрес для совершения запроса, который можно найти на странице http://xml.yandex.ru/settings.xml
+   Адрес уникален и должен выглядет примерно так:
+   http://xmlsearch.yandex.ru/xmlsearch?user=name&key=********
+   */
+$aLocal['url'] = '';
+
+/* Домен, по которому производится поиск. Например: php-myadmin.ru
+   */
+$aLocal['host'] = '';
+
+?>

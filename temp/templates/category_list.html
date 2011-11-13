@@ -1,0 +1,18 @@
+{include file="header.html" title=$title}
+
+                                    <div class="forumslist">
+                                   <ul>
+                                        {foreach from=$categories item=category}
+                                            <li><h2><a href="category{$category.id}/">{$category.title}</a></h2>
+                                                {foreach from=$category.child item=child_category name=child_category}
+                                                    <a href="category{$child_category.id}/">{$child_category.title}</a>{if $smarty.foreach.child_category.last}. {else}, {/if}
+                                                {foreachelse}
+                                                    нет вложенных категорий
+                                                {/foreach}
+                                            </li>
+                                        {foreachelse}
+                                            нет категорий
+                                        {/foreach}
+                                   </ul>
+
+{include file="footer.html"}

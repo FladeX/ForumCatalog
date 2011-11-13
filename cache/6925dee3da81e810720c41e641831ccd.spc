@@ -1,0 +1,176 @@
+a:4:{s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"feed";a:1:{i:0;a:6:{s:4:"data";s:25:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+";s:7:"attribs";a:1:{s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"lang";s:5:"ru-ru";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:2:{s:27:"http://www.w3.org/2005/Atom";a:7:{s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:12:"POBHO.com.ua";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:8:"subtitle";a:1:{i:0;a:5:{s:4:"data";s:31:"Ровенские форумы";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:3:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:35:"http://pobho.com.ua/forum/index.php";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}i:1;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:3:{s:3:"rel";s:4:"self";s:4:"type";s:20:"application/atom+xml";s:4:"href";s:38:"http://feeds.feedburner.com/pobhocomua";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}i:2;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:2:{s:3:"rel";s:3:"hub";s:4:"href";s:32:"http://pubsubhubbub.appspot.com/";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T04:21:03+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:12:"POBHO.com.ua";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:34:"http://pobho.com.ua/forum/feed.php";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"entry";a:15:{i:0;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:8:"Barzzzer";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T04:21:03+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=28011&p=483516#p483516";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=28011&p=483516#p483516";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:71:"Люди • Re: Фидошники г. Ровно покажитесь";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:108:"
+Так что там с Биг Маззи? Кто что про него слышал, помнит?<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=28011&p=483516#p483516";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=28011&p=483516#p483516";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:1;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:8:"Barzzzer";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T04:17:11+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=36310&p=483515#p483515";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=36310&p=483515#p483515";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:113:"Основной • Re: Холодный термоядерный синтез - неужели это оно???";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:514:"
+Вот интересный момент. Пошел массовый заказ деталей для &quot;реакторов&quot; в National Instruments. Очень похоже на хороший знак.<br />Увидим что будет дальше.<br /><!-- m --><a class="postlink" href="http://pobho.com.ua/forum/go.php?http://pesn.com/2011/11/10/9601953_National_Instruments_signs_to_do_E-Cat_controls/" rel="nofollow" >http://pesn.com/2011/11/10/9601953_Nati ... _controls/</a><!-- m --><hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=36310&p=483515#p483515";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=36310&p=483515#p483515";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:2;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:5:"Padre";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T04:06:09+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483514#p483514";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483514#p483514";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:64:"Город • Re: Прогреваем автомобилями";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:65:"
+Це по ходу через &quot;капусту&quot;.<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483514#p483514";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483514#p483514";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:3;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:7:"reggina";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T03:59:16+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483513#p483513";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483513#p483513";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:64:"Город • Re: Прогреваем автомобилями";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:2311:"
+Опять враги спалили...<br /><br /><blockquote class="uncited"><div><br /><span style="font-weight: bold">В центре Ровно сожгли авто главного &quot;свободовца&quot;<br /><br />&quot;Свобода&quot; связывает этот инцидент с принципиальной позицией фракции в Ровенском городском и областном советах.</span><br /><br />В Ровно сожгли автомобиль руководителя Ровенской городской организации ВО &quot;Свобода&quot; Алексея Бучинского.<br /><br />Об этом сообщает пресс-служба партии, пишет &quot;Украинская правда&quot;.<br /><br />&quot;10 ноября 2011 года около 17-30 в центре Ровно возле офиса &quot;Свободы&quot; на проспекте Мира неизвестные бросили бутылку с зажигательной смесью в автомобиль депутата Ровенского городского совета Алексея Бучинского. Автомобиль сгорел&quot;, - отмечается в сообщении.<br /><br />&quot;Свобода&quot; связывает этот инцидент с принципиальной позицией фракции в Ровенском городском и областном советах.<br /><br />&quot;В частности, &quot;свободовцы&quot; недавно раскрыли земельную сделку, в которой замешан сын председателя облгосадминистрации Мирослав Берташ, непрозрачные тендерные закупки продуктов для детских садов, незаконное функционирование игорных заведений, незаконное строительство автозаправки на стратегическом водопроводе&quot;, - уточнили в пресс-службе.<br />&lt;a href=&quot;http://www.segodnya.ua/news/14309210.html&quot;&gt;Источник&lt;/a&gt;<br /></div></blockquote><hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483513#p483513";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38345&p=483513#p483513";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:4;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:11:"zhivotovsky";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T00:42:06+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483512#p483512";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483512#p483512";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:62:"Потребитель • Re: Купить велосипед";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:45:"
+Прикольно, спасибо. )<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483512#p483512";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483512#p483512";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:5;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:6:"valine";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T00:35:11+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483511#p483511";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483511#p483511";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:62:"Потребитель • Re: Купить велосипед";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:1562:"
+<blockquote><div><cite>zhivotovsky писал(а):</cite><br />Шипованная с металлическими шипами.<br /></div></blockquote><br />Если будешь ездить по льду (по снегу толку нет) - почему нет. Только сиё настолько узкое и экзотическое занятие, что даже в масштабах планеты этим занимаются нуль целых хвост десятых.<br />Дней в году когда на прудах есть надежный лед мало. В дни эти мало кто вообще на улицу выходит, а на велосипедах даже те сорвиголовы что летом ездили уже не ездят.<br />До пруда надо ещё доехать. Допустим 5 км к ближайшему. Ну приехал, ну намотал ну 5 ну 10 ну 20 кругов по 200 метров между рыбаками. Опять 5 км домой по асфальту. Второй раз повторять сей бессмысленный подвиг вряд ли захочется. Итого за всю жизнь суммарный пробег на шипах составит 1..4 км, с нелучшими воспоминаниями.<br /><br />Куда выгоднее это время потратить например на поездку в лес, чем получить по хребту удочкой от рыбаков.<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483511#p483511";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483511#p483511";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:6;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:3:"}{R";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T00:26:21+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38311&p=483510#p483510";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38311&p=483510#p483510";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:44:"ИТ • Re: Допомога по  Mikrotik";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:263:"
+айпішку знаю..але всерівно не випускає...так пінгується нормально він бокс нормально робить...якщо по локалці заходиш через інтернет нехоче(<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38311&p=483510#p483510";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38311&p=483510#p483510";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:7;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:8:"Marshall";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-12T00:08:12+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38349&p=483509#p483509";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38349&p=483509#p483509";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:90:"Помощь • Re: Срочно куплю камеру скрытого ношения.";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:360:"
+<blockquote><div><cite>SinCabeza писал(а):</cite><br />http://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=p5197.m570.l1313&amp;_nkw=spy+camera&amp;_sacat=See-All-Categories<br /></div></blockquote><br />Колись заказував таке. Прийшов вскритий конверт і всередині тільки кабель USB.<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38349&p=483509#p483509";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38349&p=483509#p483509";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:8;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:11:"zhivotovsky";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-11T23:59:49+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483507#p483507";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483507#p483507";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:62:"Потребитель • Re: Купить велосипед";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:74:"
+Шипованная с металлическими шипами.<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483507#p483507";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483507#p483507";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:9;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:6:"valine";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-11T23:57:53+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483506#p483506";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483506#p483506";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:62:"Потребитель • Re: Купить велосипед";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:996:"
+Шипованная это spiked - с металлическими шипами для езды в гололед? Или просто с глубоким рисунком протектора?<br /><span><a href="javascript: void(0);" class="copright" >Много текста</a><span style="display:none;"><img src="http://www.kevinscycleracing.com/images/tires/09%20deep%20snow%20spike%20tire%20.jpg" alt="Изображение" /><br /><br /><img src="http://www.mtb-forum.eu/mountainbike-forum/rocket-ron.jpg" alt="Изображение" /></span></span><br /><br /><blockquote><div><cite>zhivotovsky писал(а):</cite><br />Кто-нибудь уже совершал здесь покупки, каков алгоритм?<br /></div></blockquote><br /><!-- m --><a class="postlink" href="http://pobho.com.ua/forum/go.php?http://www.rivelo.com.ua/forum/viewtopic.php?f=10&amp;t=686" rel="nofollow" >http://www.rivelo.com.ua/forum/viewtopic.php?f=10&amp;t=686</a><!-- m --><hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483506#p483506";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=29410&p=483506#p483506";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:10;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:11:"phepamemymn";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-11T23:44:11+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38357&p=483505#p483505";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38357&p=483505#p483505";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:69:"Основной • Куда мы катимся без знаний";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:637:"
+Как мило смачно закусить. К примеру  -  [url=http://www.recepty-prigotovleniya.com/kuhnimira-myaso-rostbif.html]Ростбиф с зеленым сооусом[/url]. Важными и неизменными ингредиентами итальянского салата есть помидоры, фета, порей, оливковое масло и мята перечная, потому-то качество блюда зависит именно от них. Прочее ингредиенты можно добавлять по личному хотению...<br />Ведь правда?<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38357&p=483505#p483505";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38357&p=483505#p483505";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:11;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:3:"Zet";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-11T23:20:41+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=32180&p=483504#p483504";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=32180&p=483504#p483504";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:43:"Город • Re: Презервативи";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:675:"
+<blockquote><div><cite>лапушка писал(а):</cite><br />Семь лет брака- ... <img src="http://pobho.com.ua/forum/images/smilies/icon_lol.gif" alt=":lol:" title="Laughing" />  <img src="http://pobho.com.ua/forum/images/smilies/icon_cool.gif" alt="8)" title="Cool" /><br /></div></blockquote>Ну и какой во всем это рассказе общественный резонанс?<br />Нет общественного резонанса - нет смысла для журналистов.<br />А реальная жизнь и реальные истории никому не нужны, нужен вброс и резонанс...<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=32180&p=483504#p483504";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=32180&p=483504#p483504";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:12;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:9:"SinCabeza";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-11T23:02:42+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483502#p483502";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483502#p483502";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:116:"Помощь • Re: Первый раз едем в Ровно из Беларусии - нужна помощь...";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:85:"
+пустят. <br />регистрируют разовую аз 5 минут<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483502#p483502";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483502#p483502";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:13;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:9:"PENDRAGON";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-11T22:52:23+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=37194&p=483501#p483501";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=37194&p=483501#p483501";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:108:"ИТ • Re: Провайдери повинні блокувати ігрові інтернет-сайти";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:111:"
+Галя хотела порно заблокировать в местных сетях. Ну и чё?<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=37194&p=483501#p483501";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=37194&p=483501#p483501";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}i:14;a:6:{s:4:"data";s:8:"
+
+
+
+
+
+
+
+";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:6:{s:6:"author";a:1:{i:0;a:6:{s:4:"data";s:0:"";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";s:5:"child";a:1:{s:27:"http://www.w3.org/2005/Atom";a:1:{s:4:"name";a:1:{i:0;a:5:{s:4:"data";s:6:"Sanray";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}s:7:"updated";a:1:{i:0;a:5:{s:4:"data";s:25:"2011-11-11T22:51:43+02:00";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:2:"id";a:1:{i:0;a:5:{s:4:"data";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483500#p483500";s:7:"attribs";a:0:{}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:4:"link";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"href";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483500#p483500";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:5:"title";a:1:{i:0;a:5:{s:4:"data";s:116:"Помощь • Re: Первый раз едем в Ровно из Беларусии - нужна помощь...";s:7:"attribs";a:1:{s:0:"";a:1:{s:4:"type";s:4:"html";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}s:7:"content";a:1:{i:0;a:5:{s:4:"data";s:581:"
+<blockquote><div><cite>prikhodko писал(а):</cite><br />Ваши братья все любят автобусами ехать в один - но очень большой магазин. Метро называется. Макарова 21<br /><br /><!-- m --><a class="postlink" href="http://pobho.com.ua/forum/go.php?http://www.metro.ua/servlet/PB/menu/1075499_l40/index.html" rel="nofollow" >http://www.metro.ua/servlet/PB/menu/107 ... index.html</a><!-- m --><br /></div></blockquote><br />В Метро без карточки клиента не пустят.<hr />
+";s:7:"attribs";a:2:{s:0:"";a:1:{s:4:"type";s:4:"html";}s:36:"http://www.w3.org/XML/1998/namespace";a:1:{s:4:"base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483500#p483500";}}s:8:"xml_base";s:64:"http://pobho.com.ua/forum/viewtopic.php?t=38352&p=483500#p483500";s:17:"xml_base_explicit";b:1;s:8:"xml_lang";s:5:"ru-ru";}}}}}}}s:42:"http://rssnamespace.org/feedburner/ext/1.0";a:1:{s:4:"info";a:1:{i:0;a:5:{s:4:"data";s:0:"";s:7:"attribs";a:1:{s:0:"";a:1:{s:3:"uri";s:10:"pobhocomua";}}s:8:"xml_base";s:0:"";s:17:"xml_base_explicit";b:0;s:8:"xml_lang";s:5:"ru-ru";}}}}}}}}s:4:"type";i:512;s:7:"headers";a:11:{s:13:"last-modified";s:29:"Sat, 12 Nov 2011 03:55:10 GMT";s:4:"etag";s:27:"AEdpwe9E73qN5J1GzxmtrgpwNGU";s:12:"content-type";s:23:"text/xml; charset=UTF-8";s:16:"content-encoding";s:4:"gzip";s:4:"date";s:29:"Sat, 12 Nov 2011 03:55:10 GMT";s:7:"expires";s:29:"Sat, 12 Nov 2011 03:55:10 GMT";s:13:"cache-control";s:18:"private, max-age=0";s:22:"x-content-type-options";s:7:"nosniff";s:16:"x-xss-protection";s:13:"1; mode=block";s:14:"content-length";s:4:"4795";s:6:"server";s:3:"GSE";}s:5:"build";s:14:"20090627192103";}

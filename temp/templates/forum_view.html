@@ -1,0 +1,107 @@
+{include file="header.html" title=$title}
+
+{if $forum.id == 0}
+    <div class="news">
+            <h1>404 &mdash; не найдено</h1>
+                    <div class="item">
+                            <p>Запрошенный форум отсутствует в каталоге</p>
+                    </div>
+{else}
+    <div class="forumdetails">
+            <h1>{$forum.title}</h1>
+            <div class="cbbox">
+                    <div class="box_top">
+                            <div class="box_bottom">
+                                    <div class="left">
+                                            Адрес форума:
+                                    </div>
+                                    <div class="intext">
+                                            <a href="{$forum.url}">{$forum.title}</a>
+                                    </div>
+                                    <div class="clear"></div>
+                            </div>
+                    </div>
+            </div>
+            <div class="cbbox">
+                    <div class="box_top">
+                            <div class="box_bottom">
+                                    <div class="left">
+                                            Описание форума:
+                                    </div>
+                                    <div class="intext">
+                                            {$forum.description}
+                                    </div>
+                                    <div class="clear"></div>
+                            </div>
+                    </div>
+            </div>
+            <div class="csbox">
+                    <div class="box_top">
+                            <div class="box_bottom">
+                                    <span>Тематика форума</span><br>
+                                    {$forum.category}
+                            </div>
+                    </div>
+            </div>
+            <div class="csbox">
+                    <div class="box_top">
+                            <div class="box_bottom">
+                                    <span>Просмотры</span><br>
+                                    {$forum.views}
+                            </div>
+                    </div>
+            </div>
+            <div class="csbox">
+                    <div class="box_top">
+                            <div class="box_bottom">
+                                    <span>Движок форума:</span><br>
+                                    {$forum.engine}
+                            </div>
+                    </div>
+            </div>
+            <div class="csbox">
+                    <div class="box_top">
+                            <div class="box_bottom">
+                                    <span>Год запуска</span><br>
+                                    {$forum.year}
+                            </div>
+                    </div>
+            </div>
+            <div class="clear"></div>
+            <div class="rating">
+                    <span class="a" onclick="rating('{$forum.id}', 'minus')"><img src="../temp/images/rating_minus.jpg" alt="Уменьшить рейтинг форума"></span>
+                    {if $forum.rating > 0}
+                        <span class="number" id="number" style="color:#00bb00;">{$forum.rating}</span>
+                    {elseif $forum.rating < 0}
+                        <span class="number" id="number" style="color:#bb0000;">{$forum.rating}</span>
+                    {else}
+                        <span class="number" id="number">{$forum.rating}</span>
+                    {/if}
+
+                    <span class="a" onclick="rating('{$forum.id}', 'plus')"><img src="../temp/images/rating_plus.jpg" alt="Увеличить рейтинг форума"></span><br>
+                    Рейтинг
+                    <div id="rating_message"></div>
+            </div>
+
+            {if $forum.rss}
+                <h1>Лента новостей</h1>
+                {if $forum.rss_error}
+                    {$forum.rss_error}
+                {else}
+                    {foreach from=$forum.rss_data item=rss}
+                        <div class="item">
+                            <h4><img src="{$rss.favicon}" alt="Favicon" class="favicon" />
+                            {if $rss.permalink}
+                                <a href="{$rss.permalink}">{$rss.title}</a>
+                            {else}
+                                {$rss.title}
+                            {/if}
+                            {$rss.date}</h4>
+                            {$rss.content}
+                        </div>
+                    {/foreach}
+                {/if}
+            {/if}
+{/if}
+
+{include file="footer.html"}

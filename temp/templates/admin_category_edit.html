@@ -1,0 +1,32 @@
+{include file="header.html" title=$title}
+
+<a href="../admin/">Администраторский раздел</a>, <a href="../admin/?mode=category">Список категорий</a>, <a href="../admin/?mode=category&amp;option=create">Создать категорию</a>
+
+<div class="news">
+	<h1>{$title}</h1>
+	<form method="post" action="../admin/?mode=category&amp;option=save">
+		<table width="100%" cellspacing="0" border="0">
+		<tr>
+			<td width="49%">Название категории:</td>
+			<td width="49%"><input type="text" name="name" id="name" value="{$category.title}" /></td>
+		</tr>
+		<tr>
+			<td>Родительская категория:</td>
+			<td>
+				<select name="parent">
+					<option value="0">Нет родителя</option>
+					{$category_list}
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align:center;">
+				<input type="hidden" value="{$category.id}" name="id" id="id" />
+				<input type="reset" value="Сброс" class="buttons" />
+				<input type="submit" value="Сохранить!" class="buttons" />
+			</td>
+		</tr>
+		</table>
+	</form>
+
+{include file="footer.html"}

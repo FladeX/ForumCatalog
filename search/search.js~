@@ -1,0 +1,247 @@
+/* Скрипт поиска по сайту на основе Яндекс.XML.
+   php-MyAdmin.ru/learning/search.html (utf-8).
+   */
+
+function L_page_onkeydown(event) {
+    var id = false;
+    event = event || window.event;
+    var key = event.keyCode;
+    if(event.ctrlKey) {
+        var tag = (event.target || event.srcElement).tagName;
+        if(tag != 'INPUT' && tag != 'TEXTAREA') {
+            if(key == 37) {
+                id = document.getElementById('search_page_previous');
+            }
+            if(key == 39) {
+                id = document.getElementById('search_page_next');
+            }
+            if(id) {
+                location.href = id.href;
+            }
+        }
+    }
+}
+
+function L_page(found, page) {
+    var oSpan, oA, oDIV;
+    var div = document.getElementById('search_div');
+    var pages = Math.ceil(found / 10);
+
+    oDIV = document.createElement('div');
+    div.appendChild(oDIV);
+    oDIV.className = 'search_page_top';
+
+    oSpan = document.createElement('span');
+    oDIV.appendChild(oSpan);
+    oSpan.innerHTML = 'Страницы: ';
+
+    if (page > 1) {
+        oA = document.createElement('a');
+        oDIV.appendChild(oA);
+        oA.innerHTML = '&larr; предыдущая';
+        oA.href = 'javascript:Search_onsubmit(' + (page - 1) + ');';
+        oA.className = 'search_page_a';
+        oA.id = 'search_page_previous';
+    } else {
+        oSpan = document.createElement('span');
+        oDIV.appendChild(oSpan);
+        oSpan.innerHTML = '&larr; предыдущая';
+        oSpan.className = 'search_page_span';
+    }
+
+    if (pages > page) {
+        oA = document.createElement('a');
+        oDIV.appendChild(oA);
+        oA.innerHTML = 'следующая &rarr;';
+        oA.href = 'javascript:Search_onsubmit(' + (page + 1) + ');';
+        oA.className = 'search_page_a';
+        oA.id = 'search_page_next';
+    } else {
+        oSpan = document.createElement('span');
+        oDIV.appendChild(oSpan);
+        oSpan.innerHTML = 'следующая &rarr;';
+        oSpan.className = 'search_page_span';
+    }
+
+    oDIV = document.createElement('div');
+    div.appendChild(oDIV);
+    oDIV.className = 'search_page_bottom';
+    var start = (page > 7) ? page - 6 : 1;
+    for (var i = start; i <= pages; i++) {
+        if (page > 7 && i == page - 6) {
+            oA = document.createElement('a');
+            oDIV.appendChild(oA);
+            oA.innerHTML = '1';
+            oA.href = 'javascript:Search_onsubmit(1);';
+            oA.className = 'search_page_a';
+
+            oSpan = document.createElement('span');
+            oDIV.appendChild(oSpan);
+            oSpan.innerHTML = '...';
+            continue;
+        }
+
+        if (i > page + 5 && i < pages) {
+            oA = document.createElement('a');
+            oDIV.appendChild(oA);
+            oA.innerHTML = '...';
+            oA.href = 'javascript:Search_onsubmit(' + i + ');';
+            oA.className = 'search_page_a';
+            break;
+        }
+
+        if (i == page) {
+            oSpan = document.createElement('span');
+            oDIV.appendChild(oSpan);
+            oSpan.innerHTML = i;
+            oSpan.className = 'search_page_now';
+        } else {
+            oA = document.createElement('a');
+            oDIV.appendChild(oA);
+            oA.innerHTML = i;
+            oA.href = 'javascript:Search_onsubmit(' + i + ');';
+            oA.className = 'search_page_a';
+        }
+    }
+}
+
+function Search_onsubmit(page) {
+    var text = document.getElementById('search_text');
+    var submit = document.getElementById('search_submit');
+    var div = document.getElementById('search_div');
+    if (text.value.length < 3) {
+        alert('Введите в поле запроса не менее трёх символов!');
+        text.focus();
+    } else {
+        div.innerHTML = '';
+        submit.disabled = true;
+        AjaxRequest('xml_case=search&query=' + encodeURIComponent(text.value)
+            + '&page=' + page, 'Insert_Search');
+    }
+}
+
+function Insert_Search(oXMLDoc) {
+    var div = document.getElementById('search_div');
+    var oRootNode = oXMLDoc.getElementsByTagName('root').item(0);
+    if (oRootNode.hasChildNodes()) {
+        var XML_error = oRootNode.getElementsByTagName('error').item(0);
+        var XML_found = oRootNode.getElementsByTagName('found').item(0);
+        var XML_rand  = oRootNode.getElementsByTagName('rand').item(0);
+        var XML_page  = oRootNode.getElementsByTagName('page').item(0);
+        var XML_group  = oRootNode.getElementsByTagName('group');
+        var XML_found_human = oRootNode.getElementsByTagName('found-human').item(0);
+        if (XML_error) {
+            var oDIV = document.createElement('div');
+            div.appendChild(oDIV);
+            oDIV.innerHTML = XML_error.firstChild.data;
+            oDIV.className = 'search_error';
+        } else if (XML_found_human && XML_found && XML_rand && XML_page && XML_group.length > 0) {
+            var rxRand = new RegExp('\\[b_' + XML_rand.firstChild.data + '\\](.+?)\\[\\/b_'
+                + XML_rand.firstChild.data + '\\]', 'ig');
+            var sReplace = '<span class="search_hlword">$1</span>';
+
+            oA = document.createElement('a');
+            div.appendChild(oA);
+            oA.style.styleFloat = 'left';
+            oA.style.cssFloat = 'left';
+            oA.href = 'http://xml.yandex.ru';
+            oA.target = '_blank';
+            oA.style.marginRight = '1em';
+            var oImg = document.createElement('img');
+            oA.appendChild(oImg);
+            oImg.src = 'yandex.png';
+            oImg.alt = 'Поиск реализован на основе Яндекс.XML';
+            oImg.border = '0';
+
+            var oDIV = document.createElement('div');
+            div.appendChild(oDIV);
+            oDIV.innerHTML = XML_found_human.firstChild.data;
+            oDIV.className = 'search_notice';
+
+            var oOL = document.createElement('ol');
+            div.appendChild(oOL);
+            oOL.start = (parseInt(XML_page.firstChild.data) * 10) + 1;
+            oOL.className = 'search_ol';
+
+            for (var i = 0; i < XML_group.length; i++) {
+                var XML_title   = XML_group[i].getElementsByTagName('title').item(0);
+                var XML_passage = XML_group[i].getElementsByTagName('passage').item(0);
+                var XML_url     = XML_group[i].getElementsByTagName('url').item(0);
+
+                var oLI = document.createElement('li');
+                oOL.appendChild(oLI);
+                oLI.className = 'search_li';
+
+                if (XML_title && XML_title.firstChild && XML_url && XML_url.firstChild) {
+                    var oDIV = document.createElement('div');
+                    oLI.appendChild(oDIV);
+                    oDIV.className = 'search_title_div';
+
+                    var oA = document.createElement('a');
+                    oDIV.appendChild(oA);
+                    oA.innerHTML = XML_title.firstChild.data.replace(rxRand, sReplace);
+                    oA.href = XML_url.firstChild.data;
+                    oA.className = 'search_title_a';
+                }
+
+                if (XML_passage && XML_passage.firstChild) {
+                    var oDIV = document.createElement('div');
+                    oLI.appendChild(oDIV);
+                    oDIV.innerHTML = XML_passage.firstChild.data.replace(rxRand, sReplace);
+                    oDIV.className = 'search_passage';
+                }
+
+                if (XML_url && XML_url.firstChild) {
+                    var oDIV = document.createElement('div');
+                    oLI.appendChild(oDIV);
+                    oDIV.innerHTML = XML_url.firstChild.data;
+                    oDIV.className = 'search_url';
+                }
+            }
+
+            if (parseInt(XML_found.firstChild.data) > 10) {
+                L_page(parseInt(XML_found.firstChild.data), parseInt(XML_page.firstChild.data) + 1);
+            }
+        } else {
+            var oDIV = document.createElement('div');
+            div.appendChild(oDIV);
+            oDIV.innerHTML = 'Поиск результата не дал';
+            oDIV.className = 'search_error';
+        }
+    } else {
+        alert('Произошла программная ошибка.');
+    }
+    document.getElementById('search_submit').disabled = false;
+}
+
+function AjaxRequest(request, funcName) {
+    var http_request = false;
+    if (window.XMLHttpRequest) {
+        http_request = new XMLHttpRequest();
+    } else if (window.ActiveXObject) {
+        try {
+            http_request = new ActiveXObject('Msxml2.XMLHTTP');
+        }
+        catch (e) {
+            try {
+                http_request = new ActiveXObject('Microsoft.XMLHTTP');
+            }
+            catch (e) {}
+        }
+    }
+
+    if (!http_request) return false;
+
+    http_request.onreadystatechange = function() { OnReadyState(http_request, funcName); };
+    http_request.open('POST', 'request.php', true);
+    http_request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    http_request.send(request);
+}
+
+function OnReadyState(http_request, funcName) {
+    if (http_request.readyState == 4) {
+        if (http_request.status == 200) {
+            eval(funcName + '(http_request.responseXML);');
+        }
+    }
+}

@@ -1,0 +1,7 @@
+# Скрипт поиска по сайту на основе Яндекс.XML.
+# php-MyAdmin.ru/learning/search.html 0.6 (utf-8). 28.11.2010
+
+<Files config.php>
+  order deny,allow
+  deny from all
+</Files>

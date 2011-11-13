@@ -1,0 +1,13 @@
+{include file="header.html" title=$title}
+
+<a href="../admin/">Администраторский раздел</a>, <a href="../admin/?mode=category">Список категорий</a>, <a href="../admin/?mode=category&amp;option=create">Создать категорию</a>
+
+<div class="news">
+	<h1>{$title}</h1>
+	<ul>
+		{foreach item=category from=$category_list}
+		<li>{$category.title} (<a href="../admin/?mode=category&amp;option=edit&amp;id={$category.id}">редактировать</a>, <a href="../admin/?mode=category&amp;option=delete&amp;id={$category.id}">удалить</a>)</li>
+		{/foreach}
+	</ul>
+
+{include file="footer.html"}

@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^forum([0-9]*)/$ /index.php?mode=view&id=$1
+RewriteRule ^category([0-9]*)/$ /index.php?mode=category&id=$1
+RewriteRule ^add/$ /add.php
+RewriteRule ^admin/$ /admin.php
+RewriteRule ^about/$ /about.php
+RewriteRule ^news/$ /news.php
+RewriteRule ^search/$ /search.php
+RewriteRule ^sitemap.xml$ /sitemap.php
+RewriteRule ^statistics/$ /stats.php
+RewriteRule ^rating/$ /rating.php
+RewriteRule ^refusal/$ /refusal.php
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]

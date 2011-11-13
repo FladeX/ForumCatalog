@@ -1,0 +1,710 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	font: 13px tahoma;
+}
+
+div, span, a, td, li, input, textarea, label, p {
+	font: 13px tahoma;
+}
+
+div, span, td, li, input, textarea, label, p {
+	color: #00000;
+}
+
+h1, h2, h3, h4, h5 {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	color: #197492;
+	font: 25px Times New Roman;
+	padding-right: 100px;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: underline;
+	color: #197492;
+}
+
+a:hover {
+	color: #85a611;
+	text-decoration: underline;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+.push {
+    padding: 0 0 60px 0;
+    zoom: 1;
+}
+
+.container {
+	width: 904px;
+	margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+.top {
+	padding: 45px 0 0;
+	overflow: hidden;
+}
+
+.top .links {
+	padding: 0 25px 40px;
+	text-align: right;
+}
+
+.top .links a {
+	margin: 0 15px;
+	font-size: 12px;
+	color: #aeaeae;
+}
+
+.top .links a:hover {
+	text-decoration: none;
+}
+
+.top .logo {
+	float: left;
+}
+
+.top .banner {
+	float: right;
+	padding: 0 6px 0 0;
+}
+
+.top .nav {
+	margin-top: 42px;
+	height: 35px;
+	padding: 4px 5px 6px 5px;
+	background: url('images/top_nav_bg.jpg') no-repeat;
+}
+
+.top .nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.top .nav ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.top .nav ul li a {
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	color: #FFFFFF;
+ 	text-shadow: #1397da 0px 1px 0px;
+	float: left;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 0 24px;
+	background: url('images/top_nav_li_a.png') repeat-x center -35px;
+}
+
+.top .nav ul li a:hover {
+	background-position: center top;
+}
+
+.main {
+ 	padding: 25px 0 50px 5px;
+ 	overflow: hidden;
+}
+
+.main .content {
+ 	width: 620px;
+ 	float: left;
+}
+
+.main .content .wrap {
+	padding: 0 0 0 0;
+}
+
+.main .content .forumslist {
+	width: 580px;
+}
+
+.main .content .forumslist ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main .content .forumslist ul li {
+	margin: 0 0 30px;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main .content .forumslist ul li h2 {
+	margin-bottom: 10px;
+}
+
+.main .content .forumslist ul li h2 a {
+	color: #313131;
+	font: 22px Time New Roman;
+	text-decoration: underline;
+}
+
+.main .content .forumslist ul li h2 a:hover {
+	text-decoration: none;
+}
+
+.main .content .forumslist ul li a {
+	text-decoration: none;
+}
+
+.main .content .forumslist ul li a:hover {
+	text-decoration: underline;
+}
+
+.main .content .news {
+
+}
+
+.main .content .news .item {
+	padding: 0 30px 0 0;
+	margin: 15px 0;
+}
+
+.main .content .news .item .date {
+ 	font-size: 10px;
+ 	color: #d1d1d1;
+ 	margin-bottom: 1px;
+}
+
+.main .content .news .item h2 {
+	font: 20px Times New Roman;
+	color: #2ba5cd;
+}
+
+.main .content .news .item p {
+	margin: 5px 0;
+	color: #454748;
+	font-size: 11px;
+}
+
+.main .content .news ol li {
+	color: #454748;
+	font-size: 11px;
+	padding-top: 11px;
+}
+
+.main .content .news .item a {
+	font-size: 11px;
+}
+
+.main .content .forumdetails {
+ 	position: relative;
+ 	width: 580px;
+}
+
+.main .content .forumdetails h1 {
+	color: #343434;
+	margin-bottom: 20px;
+}
+
+.main .content .forumdetails .rating {
+	font-size: 10px;
+	color: #8f8f8f;
+	text-align: center;
+	position: absolute;
+	right: -5px;
+	top: 5px;
+}
+
+.main .content .forumdetails .rating span.a,
+.main .content .forumdetails .rating a {
+	cursor: pointer;
+	margin: 0 12px;
+}
+
+.main .content .forumdetails .rating .number {
+ 	font: 25px/25px Times New Roman;
+	font-weight: bold;
+ 	color: #17b7e8;
+}
+
+.main .content .forumdetails .cbbox .left {
+	width: 90px;
+	padding-right: 10px;
+	float: left;
+	color: #a2a2a2;
+}
+
+.main .content .forumdetails .cbbox .intext {
+	width: 425px;
+	float: left;
+}
+
+.main .content .forumdetails .csbox .box_bottom {
+	text-align: center;
+	height: 57px;
+	padding-bottom: 0 !important;
+	line-height: 26px;
+}
+
+.main .content .forumdetails .csbox span {
+	color: #a2a2a2;
+	line-height: 15px;
+}
+
+.main .content .cbbox {
+	background: url('images/content_cbbox_c.jpg') repeat-y;
+	margin-bottom: 6px;
+}
+
+.main .content .cbbox .box_top {
+	background: url('images/content_cbbox_top.jpg') no-repeat;
+	zoom: 1;
+}
+
+.main .content .cbbox .box_bottom {
+	background: url('images/content_cbbox_bottom.jpg') no-repeat left bottom;
+	width: 535px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.main .content .csbox {
+	background: url('images/content_csbox_c.jpg') repeat-y;
+	margin:  0 6px 6px 0;
+	float: left;
+}
+
+.main .content .csbox .box_top {
+	background: url('images/content_csbox_top.jpg') no-repeat;
+}
+
+.main .content .csbox .box_bottom {
+	background: url('images/content_csbox_bottom.jpg') no-repeat left bottom;
+	width: 244px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+.main .content .forumadd {
+	position: relative;
+	z-index: 1;
+	zoom: 1;
+}
+
+.main .content .forumadd h1 {
+ 	color: #197492;
+ 	font: 22px Times New Roman;
+ 	margin-bottom: 20px;
+}
+
+.main .content .forumadd .column {
+	width: 308px;
+	float: left;
+	color: #8a8a8a;
+}
+
+.main .content .forumadd .textfield {
+	background: url('images/form_textfield.jpg') no-repeat;
+	overflow: hidden;
+	width: 267px;
+	height: 29px;
+	margin: 6px 0 35px;
+}
+
+.main .content .forumadd .textfield:hover,
+.main .content .forumadd .textfield:focus,
+.main .content .forumadd .textfield:active {
+	background: url('images/form_textfield_pink.jpg') no-repeat;
+}
+
+.main .content .forumadd .textfield input {
+	width: 243px;
+	border: none;
+	padding: 6px 12px;
+	background: none;
+}
+
+.main .content .forumadd .textareafield {
+	background: url('images/form_textarea.jpg') no-repeat;
+	overflow: hidden;
+	width: 266px;
+	height: 247px;
+	margin: 6px 0 35px;
+}
+
+.main .content .forumadd .textareafield textarea {
+	width: 242px;
+	border: none;
+	padding: 6px 12px;
+	height: 235px;
+	background: none;
+}
+
+.main .content .forumadd .selectfield {
+	width: 267px;
+	height: 29px;
+	margin: 6px 0 35px;
+	position: relative;
+	zoom: 1;
+}
+
+.main .content .forumadd .selectfield .inner {
+	background: url('images/form_selectfield.jpg') no-repeat;
+	overflow: hidden;
+	height: 29px;
+	line-height: 27px;
+	padding: 0 35px 0 12px;
+	color: #353434;
+	cursor: pointer;
+	zoom: 1;
+}
+
+.main .content .forumadd .selectfield .options {
+	position: absolute;
+	left: 0;
+	top: 29px;
+	border: 1px solid #cecece;
+	background: #ffffff;
+	z-index: 1000;
+	width: 265px;
+	zoom: 1;
+	display: none;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.main .content .forumadd .selectfield .options div {
+	padding: 3px 0 3px 12px;
+	cursor: pointer;
+	color: #000000;
+}
+
+.main .content .forumadd .selectfield .options div:hover,
+.main .content .forumadd .selectfield .options div.hover {
+	background: #cecece !important;
+}
+
+.main .content .forumadd .selectfield .options div.selected {
+	background: #eeeeee;
+}
+
+.main .content .forumadd .formbox {
+	background: url('images/form_box_c.jpg') repeat-y;
+	margin: 65px 0 37px;
+}
+
+.main .content .forumadd .formbox .box_top {
+	background: url('images/form_box_top.jpg') no-repeat;
+}
+
+.main .content .forumadd .formbox .box_bottom {
+	background: url('images/form_box_bottom.jpg') no-repeat left bottom;
+	padding: 30px 20px;
+	zoom: 1;
+	overflow: hidden;
+	font-size: 11px;
+}
+
+.main .content .forumadd .clink {
+	text-align: right;
+	margin: 68px 45px 0 0;
+}
+
+.main .content .forumadd .clink input {
+	border: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+	color: #197492;
+	cursor: pointer;
+	border-bottom: 1px dashed #197492;
+	width: 100px;
+}
+
+.main .content .forumadd .clink input:hover {
+	border-bottom: none;
+}
+
+.main .content .forumadd .submit {
+
+}
+
+.main .content .forumadd .submit input {
+	background: #ffffff url('images/form_submit.jpg') no-repeat left top;
+	width: 284px;
+	height: 66px;
+	text-align: center;
+	display: block;
+	font-size: 32px;
+	color: #ffffff;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 50px;
+	text-shadow: #1397da 0px 2px 0px;
+	margin: 0 auto;
+	padding: 0 0 10px;
+	border: none;
+}
+
+.main .content .forumadd .submit input:hover {
+	background-position: left bottom;
+}
+
+.main .side {
+	width: 274px;
+	float: left;
+}
+
+.main .side .box {
+	background: url('images/side_box_c.jpg') repeat-y;
+	margin-bottom: 40px;
+}
+
+.main .side .tbox .box_top {
+	background: url('images/side_tbox_top.png') no-repeat;
+}
+
+.main .side .bbox .box_top {
+	background: url('images/side_bbox_top.png') no-repeat;
+}
+
+.main .side .box .box_bottom {
+	background: url('images/side_box_bottom.jpg') no-repeat left bottom;
+}
+
+.main .side .box h3 {
+	color: #FFFFFF;
+	text-shadow: #333333 0px 1px 0px;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+}
+
+.main .side .lastadded {
+	padding: 20px 0 20px 14px;
+	zoom: 1;
+}
+
+.main .side .lastadded ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main .side .lastadded ul li {
+	margin: 7px 0;
+	padding: 0;
+	zoom: 1;
+}
+
+.main .side .lastadded ul li a {
+	display: block;
+	height: 24px;
+	width: 233px;
+	background: url('images/lastadded_li_a.png') no-repeat left top;
+	color: #6a6a6a;
+	line-height: 24px;
+	font-size: 10px;
+	text-decoration: none;
+	padding: 0 0 0 12px;
+}
+
+.main .side .lastadded ul li a:hover {
+	background-position: left bottom;
+	color: #FFFFFF;
+}
+
+.main .side .counters {
+	padding: 20px 0 0 40px;
+	zoom: 1;
+}
+
+.main .side .counters a {
+	margin-right: 18px;
+}
+
+.main .side .adv {
+	padding: 15px 0 20px 40px;
+	zoom: 1;
+}
+
+.main .side .adv ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main .side .adv ul li {
+	margin: 9px 0;
+	padding: 0;
+	font-size: 11px;
+	color: #a8a8a8;
+}
+
+.main .side .adv ul li a {
+	font-size: 11px;
+	color: #a8a8a8;
+}
+
+.main .side .adv ul li a:hover {
+	text-decoration: none;
+}
+
+.footer {
+	width: 904px;
+	height: 60px;
+	margin: -60px auto 0;
+	font-size: 12px;
+	color: #c3c3c3;
+}
+
+.footer .inner {
+	padding: 0 35px 0 7px;
+	zoom: 1;
+}
+
+.footer span {
+	float: right;
+	font-size: 12px;
+	color: #c3c3c3;
+}
+
+.viewforum td {
+	font-size: 11px;
+	padding-top: 20px;
+}
+
+.viewforum .row1 td {
+	color: #111111;
+}
+
+.viewforum .row2 td {
+	color: #a2a2a2;
+}
+
+.deactive, .deactive td {
+	background: #dddddd;
+}
+.refusal, .refusal td {
+	background: #bf8080;
+}
+
+/* Скрипт поиска по сайту на основе Яндекс.XML.
+	php-MyAdmin.ru/learning/search.html (utf-8).
+	*/
+
+/* Контейнер результатов поиска. */
+div.search_div {
+	font-family: Tahoma;
+	/*font-size: 12px;*/
+	margin-top: 10px;
+	padding-top: 10px;
+}
+/* Строка ошибки. */
+div.search_error {
+	/*font-size: 11px;*/
+}
+/* Строка результата найденных страниц. */
+div.search_notice {
+	/*font-size: 11px;*/
+	padding-top: 8px;
+}
+/* Контейнер списка. */
+ol.search_ol {
+
+}
+/* Элементы списка. */
+li.search_li {
+	margin-bottom: 10px;
+}
+/* Контейнер заголовка найденного. */
+div.search_title_div {
+
+}
+/* Ссылка заголовка найденного. */
+a.search_title_a {
+	/*color: #164782;*/
+	text-decoration: underline;
+	font-family: Tahoma;
+	/*font-size: 14px;*/
+}
+/* Ссылка заголовка найденного при наведении курсора. */
+a.search_title_a:hover {
+	text-decoration: none;
+}
+/* Контейнер текста найденного. */
+div.search_passage {
+	color: #2d2d2d;
+}
+/* Контейнер ссылки страницы найденного. */
+div.search_url {
+	color: #5e5e5e;
+	margin-top: 4px;
+}
+/* Выделение искомого в тексте. */
+span.search_hlword {
+	font-weight: bold;
+}
+/* Верхняя часть блока перелистывания. */
+div.search_page_top {
+	/*font-size: 14px;*/
+	font-weight: bold;
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #666699;
+}
+/* Ссылки перелистывания. */
+a.search_page_a {
+	color: #164782;
+	text-decoration: underline;
+	font-family: Tahoma;
+	/*font-size: 14px;*/
+	padding: 0px 5px;
+}
+/* Ссылки перелистывания при наведении курсора. */
+a.search_page_a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+/* Приглушенная надпись перелистывания. */
+span.search_page_span {
+	color: gray;
+	font-family: Tahoma;
+	/*font-size: 14px;*/
+	padding: 0px 5px;
+}
+/* Нижняя часть блока перелистывания. */
+div.search_page_bottom {
+	margin-top: 5px;
+}
+/* Текущая страница в блоке перелистывания. */
+span.search_page_now {
+	background-color: #d6d6de;
+	color: #164782;
+	/*font-size: 15px;*/
+	font-weight: bold;
+	padding: 0px 5px;
+}

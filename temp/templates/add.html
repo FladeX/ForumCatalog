@@ -1,0 +1,126 @@
+{include file="header.html" title=$title}
+
+{if $send == 'send'}
+    {if $validate}
+        <div class="news">
+        <h1>Добавление форума</h1>
+        {$validate}
+    {else}
+        <div class="news">
+            <h1>Добавление форума</h1>
+            <p>Ваша заявка принята к рассмотрению! В ближайшее время модераторы каталога рассмотрят её и, возможно, одобрят её для публикации в каталоге.</p>
+    {/if}
+{$content}
+{else}
+                                   <div class="forumadd">
+                                           <h1>Добавление форума</h1>
+                                           <form method="post" action="../add/">
+                                           <div class="column">
+                                                   Название форума
+                                                   <div class="textfield">
+                                                           <input type="text" name="name" id="name" value="">
+                                                   </div>
+                                                   <div class="formbox">
+                                                           <div class="box_top">
+                                                                   <div class="box_bottom">
+                                                                           О чём ваш форум?<br>
+                                                                           Для кого форум предназначен в первую очередь?<br>
+                                                                           Какие вопросы обсуждаются на форуме?<br>
+                                                                           Какие основные тематические разделы есть на форуме?<br>
+                                                                           Чем форум отличается от аналогичных по тематике?
+                                                                   </div>
+                                                           </div>
+                                                   </div>
+                                                   Движок форума
+                                                   <div class="selectfield">
+                                                           <div class="inner">
+                                                           </div>
+                                                           <input name="engine" type="hidden" value="">
+                                                           <div class="options">
+                                                                   {foreach key=key item=item from=$engines}
+                                                                        <div>{$item}<input name="engine_" type="hidden" value="{$key}"></div>
+                                                                   {/foreach}
+                                                           </div>
+                                                   </div>
+                                                   Портал на движке форума
+                                                   <div class="selectfield">
+                                                           <div class="inner">
+                                                           </div>
+                                                           <input name="portal" type="hidden" value="">
+                                                           <div class="options">
+                                                                   <div class="selected">Не используется<input name="portal_" type="hidden" value="0"></div>
+                                                                   <div>Используется<input name="portal_" type="hidden" value="1"></div>
+                                                           </div>
+                                                   </div>
+                                                   Тематика форума
+                                                   <div class="selectfield">
+                                                           <div class="inner">
+                                                           </div>
+                                                           <input type="hidden" name="category" value="">
+                                                           <div class="options">
+                                                                     {$category_list}
+                                                           </div>
+                                                   </div>
+                                                   RSS форума (необязательно)
+                                                   <div class="textfield">
+                                                           <input type="text" name="rss" id="rss" value="">
+                                                   </div>
+                                                   Шифр с <a href="http://forumadmins.ru/viewtopic.php?f=14&amp;t=100&amp;r=2" target="_blank">ForumAdmins</a>:
+                                                   <div class="textfield">
+                                                           <input type="text" name="abq" id="abq" value="">
+                                                   </div>
+                                           </div>
+                                           <div class="column">
+                                                   Адрес форума
+                                                   <div class="textfield">
+                                                           <input type="text" name="url" id="url" value="">
+                                                   </div>
+                                                   Описание форума
+                                                   <div class="textareafield">
+                                                           <script type="text/javascript">
+                                                                   $(document).ready(function() {
+                                                                           $("#description").markItUp(mySettings);
+                                                                   });
+                                                           </script>
+                                                           <textarea name="description" id="description" cols="5" rows="5"></textarea>
+                                                   </div>
+                                                   Интеграция с CMS
+                                                   <div class="selectfield">
+                                                           <div class="inner">
+                                                           </div>
+                                                           <input type="hidden" name="cms" id="cms" value="">
+                                                           <div class="options">
+                                                                   {foreach key=key item=item from=$cms}
+                                                                        <div>{$item}<input name="cms_" type="hidden" value="{$key}"></div>
+                                                                   {/foreach}
+                                                           </div>
+                                                   </div>
+                                                   Год запуска
+                                                   <div class="selectfield">
+                                                           <div class="inner">
+                                                           </div>
+                                                           <input type="hidden" name="year" value="">
+                                                           <div class="options">
+                                                                   <div>----<input name="year_" type="hidden" value="0"></div>
+                                                                   {foreach from=$year_list item=year}
+                                                                        <div>{$year}<input name="year_" type="hidden" value="{$year}"></div>
+                                                                   {/foreach}
+                                                           </div>
+                                                   </div>
+                                                   Электронная почта
+                                                   <div class="textfield">
+                                                           <input type="text" name="email" value="">
+                                                   </div>
+                                                   <div class="clink">
+                                                           <input type="reset" value="Очистить все">
+                                                   </div>
+                                           </div>
+                                           <div class="clear"></div>
+                                           <div class="submit">
+                                                   <input type="hidden" value="send" name="send" id="send" style="display:none;" />
+                                                   <input type="submit" value="Отправить">
+                                           </div>
+                                           </form>
+{/if}
+
+{include file="footer.html"}

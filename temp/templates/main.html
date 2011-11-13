@@ -1,0 +1,9 @@
+{include file="header.html" title=$title}
+
+{if $mode == 'view'}
+    {include file="forum_view.html" title=$title}
+{else}
+    {$content}
+{/if}
+
+{include file="footer.html"}

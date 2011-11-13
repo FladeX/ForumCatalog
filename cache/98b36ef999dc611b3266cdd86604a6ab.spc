@@ -1,0 +1,1 @@
+a:3:{s:3:"url";s:45:"http://web20.su/forum/?forum=news&xfeed=forum";s:8:"feed_url";s:31:"http://it-talk.org/feed-rss.xml";s:5:"build";s:14:"20090627192103";}

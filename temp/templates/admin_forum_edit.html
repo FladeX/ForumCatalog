@@ -1,0 +1,93 @@
+{include file="header.html" title=$title}
+
+<a href="../admin/">Администраторский раздел</a>, <a href="../admin/?mode=category">Список категорий</a>, <a href="../admin/?mode=category&amp;option=create">Создать категорию</a>
+
+<div class="news">
+	<h1>Редактирование форума</h1>
+	<form method="post" action="../admin/?mode=save">
+		<table width="100%" cellspacing="0" border="0">
+		<tr>
+			<td width="49%">Название форума:</td>
+			<td width="49%"><input type="text" name="name" id="name" value="{$forum.title}" /></td>
+		</tr>
+		<tr>
+			<td>Адрес форума:</td>
+			<td><input type="text" name="url" id="url" value="{$forum.url}" /></td>
+		</tr>
+		<tr>
+			<td>Описание форума:</td>
+			<td><textarea name="description" id="description" rows="20" cols="40">{$forum.description}</textarea></td>
+		</tr>
+		<tr>
+			<td>Движок форума:</td>
+			<td>
+				<select name="engine">
+					{foreach key=key item=item from=$engines}
+						<option value="{$key}"{if $key == $forum.engine} selected="selected"{/if}>{$item}</option>
+					{/foreach}
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Интеграция с cms:</td>
+			<td>
+				<select name="cms">
+					{foreach key=key item=item from=$cms_list}
+						<option value="{$key}"{if $key == $forum.cms} selected="selected"{/if}>{$item}</option>
+					{/foreach}
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Портал на движке форума:</td>
+			<td>
+				<label for="portal0">Не используется</label> <input type="radio" name="portal" value="0" id="portal0"{if $forum.portal == 0} checked="checked"{/if} />
+				<label for="portal1">Используется</label> <input type="radio" name="portal" value="1" id="portal1"{if $forum.portal == 1} checked="checked"{/if} />
+			</td>
+		</tr>
+		<tr>
+			<td>Тематика форума:</td>
+			<td>
+				<select name="category" value="{$forum.cat}">
+					 {$category_list}
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Год запуска:</td>
+			<td>
+				<select name="year">
+					<option value="0">----</option>
+					{foreach from=$years item=year}
+						<option value="{$year}"{if $year == $forum.year} selected="selected"{/if}>{$year}</option>
+					{/foreach}
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>RSS форума (оставьте пустым, если его нет):</td>
+			<td><input type="text" name="rss" id="rss" value="{$forum.rss}" /></td>
+		</tr>
+		<tr>
+			<td>Ваш e-mail:</td>
+			<td><input type="text" name="email" id="email" value="{$forum.email}" /></td>
+		</tr>
+		<tr>
+			<td>Форум активен?</td>
+			<td><input type="checkbox" name="active" id="active" value="1"{if $forum.active == 1} checked="checked"{/if} /></td>
+		</tr>
+		<tr>
+			<td>Причина отказа в размещении:</td>
+			<td><input type="text" name="refusal" id="refusal" value="{$forum.refusal}" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align:center;">
+				<input type="hidden" value="{$forum.id}" name="id" id="id" />
+				<input type="reset" value="Сброс" class="buttons" />
+				<input type="submit" value="Сохранить!" class="buttons" />
+			</td>
+		</tr>
+		</table>
+	</form>
+
+{include file="footer.html"}

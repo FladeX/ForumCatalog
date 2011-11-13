@@ -1,0 +1,12 @@
+{include file="header.html" title=$title}
+
+<div class="news">
+	<h1>{$title}</h1>
+	{if $password_wrong}<p>Введённый пароль неверен!</p>{/if}
+	<p>Введите пароль для доступа:</p>
+	<form action="../admin/" method="post">
+		<label for="adminpass">Пароль:</label>
+		<input type="password" value="" name="adminpass" id="adminpass" />
+	</form>
+
+{include file="footer.html"}

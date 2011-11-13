@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /about.php
+Disallow: /add.php
+Disallow: /admin.php
+Disallow: /go.php
+Disallow: /index.php
+Disallow: /news.php
+Sitemap: http://forumcatalog.ru/sitemap.xml
+
+User-agent: Yandex
+Disallow: /about.php
+Disallow: /add.php
+Disallow: /admin.php
+Disallow: /go.php
+Disallow: /index.php
+Disallow: /news.php
+Host: forumcatalog.ru
+Sitemap: http://forumcatalog.ru/sitemap.xml

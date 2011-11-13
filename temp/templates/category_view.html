@@ -1,0 +1,29 @@
+{include file="header.html" title=$title}
+
+                                    <div class="news">
+                                            {if $category.id == 0}
+                                                <h1>Категория не найдена</h1>
+                                                <p>Запрошенной вами категории не существует.</p>
+                                            {else}
+                                                <h1>Просмотр категории &laquo;{$category.title}&raquo;</h1>
+                                                {if $category.forums_count > 0}
+                                                <ul>
+                                                {foreach $category.forums item=forum name=forum}
+                                                    <li><a href="../forum{$forum.id}/">{$forum.title}</a></li>
+                                                {/foreach}
+                                                </ul>
+                                                {if $category.forums_count == 1}
+                                                    <p>Всего в категории <b>{$category.forums_count}</b> форум.</p>
+                                                {elseif $category.forums_count <= 4}
+                                                    <p>Всего в категории <b>{$category.forums_count}</b> форума.</p>
+                                                {elseif ($category.forums_count > 20) || (($category.forums_count % 10) == 2) }
+                                                    <p>Всего в категории <b>{$category.forums_count}</b> форума.</p>
+                                                {else}
+                                                    <p>Всего в категории <b>{$category.forums_count}</b> форумов.</p>
+                                                {/if}
+                                                {else}
+                                                    <p>Нет форумов в этой категории.</p>
+                                                {/if}
+                                            {/if}
+
+{include file="footer.html"}

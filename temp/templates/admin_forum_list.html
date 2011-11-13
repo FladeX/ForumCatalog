@@ -1,0 +1,34 @@
+{include file="header.html" title=$title}
+
+<a href="../admin/">Администраторский раздел</a>, <a href="../admin/?mode=category">Список категорий</a>, <a href="../admin/?mode=category&amp;option=create">Создать категорию</a>
+
+<div class="news">
+	<h1>Редактирование форумов</h1>
+	<table width="100%" cellspacing="0">
+	<tr>
+		<th>Форум</th>
+		<th>Движок</th>
+		<th>Дата добавления</th>
+		<th>Тематика форума</th>
+		<th>Год запуска</th>
+		<th>Управление</th>
+	</tr>
+	{foreach from=$admin_forum_list item=forum name=forum}
+		{if $forum.active}
+			<tr>
+		{elseif $forum.refusal != ''}
+			<tr class="refusal">
+		{else}
+			<tr class="deactive">
+		{/if}
+			<td><a href="{$forum.url}" alt="{$forum.description}" title="{$forum.description}">{$forum.title}</a></td>
+			<td>{$forum.engine}</td>
+			<td>{$forum.date}</td>
+			<td>{$forum.cat}</td>
+			<td>{$forum.year}</td>
+			<td><!--<a href=\"../logo_generate.php?id={$forum.id}">Лого</a> / --><a href="../admin/?mode=edit&amp;id={$forum.id}"><abbr title="Редактировать">Ред.</abbr></a> / <a href="../admin/?mode=delete&amp;id={$forum.id}"><abbr title="Удалить">Уд.</abbr></a></td>
+		</tr>
+	{/foreach}
+	</table>
+
+{include file="footer.html"}
