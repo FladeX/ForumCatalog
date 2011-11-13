@@ -1,0 +1,7 @@
+.gitignore
+# cache files
+cache/*
+!cache/index.html
+
+# local config
+db.php
