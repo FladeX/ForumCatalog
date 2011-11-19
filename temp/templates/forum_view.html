@@ -16,7 +16,7 @@
                                             Адрес форума:
                                     </div>
                                     <div class="intext">
-                                            <a href="{$forum.url}">{$forum.title}</a>
+                                            <a href="/{$forum.url}">{$forum.title}</a>
                                     </div>
                                     <div class="clear"></div>
                             </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="clear"></div>
             <div class="rating">
-                    <span class="a" onclick="rating('{$forum.id}', 'minus')"><img src="../temp/images/rating_minus.jpg" alt="Уменьшить рейтинг форума"></span>
+                    <span class="a" onclick="rating('{$forum.id}', 'minus')"><img src="/temp/images/rating_minus.jpg" alt="Уменьшить рейтинг форума"></span>
                     {if $forum.rating > 0}
                         <span class="number" id="number" style="color:#00bb00;">{$forum.rating}</span>
                     {elseif $forum.rating < 0}
@@ -78,7 +78,7 @@
                         <span class="number" id="number">{$forum.rating}</span>
                     {/if}
 
-                    <span class="a" onclick="rating('{$forum.id}', 'plus')"><img src="../temp/images/rating_plus.jpg" alt="Увеличить рейтинг форума"></span><br>
+                    <span class="a" onclick="rating('{$forum.id}', 'plus')"><img src="/temp/images/rating_plus.jpg" alt="Увеличить рейтинг форума"></span><br>
                     Рейтинг
                     <div id="rating_message"></div>
             </div>

@@ -1,6 +1,6 @@
 {include file="header.html" title=$title}
 
-<a href="../admin/">Администраторский раздел</a>, <a href="../admin/?mode=category">Список категорий</a>, <a href="../admin/?mode=category&amp;option=create">Создать категорию</a>
+<a href="/admin/">Администраторский раздел</a>, <a href="/admin/?mode=category">Список категорий</a>, <a href="/admin/?mode=category&amp;option=create">Создать категорию</a>
 
 <div class="news">
 	<h1>Редактирование форумов</h1>
@@ -26,7 +26,7 @@
 			<td>{$forum.date}</td>
 			<td>{$forum.cat}</td>
 			<td>{$forum.year}</td>
-			<td><!--<a href=\"../logo_generate.php?id={$forum.id}">Лого</a> / --><a href="../admin/?mode=edit&amp;id={$forum.id}"><abbr title="Редактировать">Ред.</abbr></a> / <a href="../admin/?mode=delete&amp;id={$forum.id}"><abbr title="Удалить">Уд.</abbr></a></td>
+			<td><!--<a href=\"/logo_generate.php?id={$forum.id}">Лого</a> / --><a href="/admin/?mode=edit&amp;id={$forum.id}"><abbr title="Редактировать">Ред.</abbr></a> / <a href="/admin/?mode=delete&amp;id={$forum.id}"><abbr title="Удалить">Уд.</abbr></a></td>
 		</tr>
 	{/foreach}
 	</table>

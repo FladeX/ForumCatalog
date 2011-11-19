@@ -575,7 +575,7 @@ class Forum {
 			$content .= "<tr>\n";
 //			$content .= "<td><a href=\"" . $result_row['url'] . "\" alt=\"" . $result_row['description'] . "\" title=\"" . $result_row['description'] . "\">" . $result_row['title'] . "</a></td>\n";
 //			$content .= "<td><a href=\"index.php?mode=view&id=" . $result_row['id'] . "\" alt=\"" . $result_row['description'] . "\" title=\"" . $result_row['description'] . "\">" . $result_row['title'] . "</a></td>\n";
-			$content .= "<td><a href=\"forum" . $result_row['id'] . "/\" alt=\"" . $result_row['description'] . "\" title=\"" . $result_row['description'] . "\">" . $result_row['title'] . "</a></td>\n";
+			$content .= "<td><a href=\"/forum" . $result_row['id'] . "/\" alt=\"" . $result_row['description'] . "\" title=\"" . $result_row['description'] . "\">" . $result_row['title'] . "</a></td>\n";
 			$content .= "<td>" . engine($result_row['engine']) . "</td>\n";
 			$content .= "<td>" . date("m.d.Y, H:i", $result_row['date']) . "</td>\n";
 			$content .= "<td>" . category($result_row['cat']) . "</td>\n";

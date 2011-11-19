@@ -9,7 +9,7 @@
                                                 {if $category.forums_count > 0}
                                                 <ul>
                                                 {foreach $category.forums item=forum name=forum}
-                                                    <li><a href="../forum{$forum.id}/">{$forum.title}</a></li>
+                                                    <li><a href="/forum{$forum.id}/">{$forum.title}</a></li>
                                                 {/foreach}
                                                 </ul>
                                                 {if $category.forums_count == 1}
