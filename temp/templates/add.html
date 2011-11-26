@@ -17,15 +17,15 @@
                                            <div class="column">
                                                    Название форума
                                                    <div class="textfield">
-                                                           <input type="text" name="name" id="name" value="">
+                                                           <input type="text" name="name" id="name" value="" />
                                                    </div>
                                                    <div class="formbox">
                                                            <div class="box_top">
                                                                    <div class="box_bottom">
-                                                                           О чём ваш форум?<br>
-                                                                           Для кого форум предназначен в первую очередь?<br>
-                                                                           Какие вопросы обсуждаются на форуме?<br>
-                                                                           Какие основные тематические разделы есть на форуме?<br>
+                                                                           О чём ваш форум?<br />
+                                                                           Для кого форум предназначен в первую очередь?<br />
+                                                                           Какие вопросы обсуждаются на форуме?<br />
+                                                                           Какие основные тематические разделы есть на форуме?<br />
                                                                            Чем форум отличается от аналогичных по тематике?
                                                                    </div>
                                                            </div>
@@ -34,10 +34,10 @@
                                                    <div class="selectfield">
                                                            <div class="inner">
                                                            </div>
-                                                           <input name="engine" type="hidden" value="">
+                                                           <input name="engine" type="hidden" value="" />
                                                            <div class="options">
                                                                    {foreach key=key item=item from=$engines}
-                                                                        <div>{$item}<input name="engine_" type="hidden" value="{$key}"></div>
+                                                                        <div>{$item}<input name="engine_" type="hidden" value="{$key}" /></div>
                                                                    {/foreach}
                                                            </div>
                                                    </div>
@@ -45,34 +45,34 @@
                                                    <div class="selectfield">
                                                            <div class="inner">
                                                            </div>
-                                                           <input name="portal" type="hidden" value="">
+                                                           <input name="portal" type="hidden" value="" />
                                                            <div class="options">
-                                                                   <div class="selected">Не используется<input name="portal_" type="hidden" value="0"></div>
-                                                                   <div>Используется<input name="portal_" type="hidden" value="1"></div>
+                                                                   <div class="selected">Не используется<input name="portal_" type="hidden" value="0" /></div>
+                                                                   <div>Используется<input name="portal_" type="hidden" value="1" /></div>
                                                            </div>
                                                    </div>
                                                    Тематика форума
                                                    <div class="selectfield">
                                                            <div class="inner">
                                                            </div>
-                                                           <input type="hidden" name="category" value="">
+                                                           <input type="hidden" name="category" value="" />
                                                            <div class="options">
                                                                      {$category_list}
                                                            </div>
                                                    </div>
                                                    RSS форума (необязательно)
                                                    <div class="textfield">
-                                                           <input type="text" name="rss" id="rss" value="">
+                                                           <input type="text" name="rss" id="rss" value="" />
                                                    </div>
-                                                   Шифр с <a href="http://forumadmins.ru/viewtopic.php?f=14&amp;t=100&amp;r=2" target="_blank">ForumAdmins</a>:
+                                                   Шифр с <a href="http://forumadmins.ru/viewtopic.php?f=14&amp;t=100&amp;r=2" rel="blank">ForumAdmins</a>:
                                                    <div class="textfield">
-                                                           <input type="text" name="abq" id="abq" value="">
+                                                           <input type="text" name="abq" id="abq" value="" />
                                                    </div>
                                            </div>
                                            <div class="column">
                                                    Адрес форума
                                                    <div class="textfield">
-                                                           <input type="text" name="url" id="url" value="">
+                                                           <input type="text" name="url" id="url" value="" />
                                                    </div>
                                                    Описание форума
                                                    <div class="textareafield">
@@ -87,10 +87,10 @@
                                                    <div class="selectfield">
                                                            <div class="inner">
                                                            </div>
-                                                           <input type="hidden" name="cms" id="cms" value="">
+                                                           <input type="hidden" name="cms" id="cms" value="" />
                                                            <div class="options">
                                                                    {foreach key=key item=item from=$cms}
-                                                                        <div>{$item}<input name="cms_" type="hidden" value="{$key}"></div>
+                                                                        <div>{$item}<input name="cms_" type="hidden" value="{$key}" /></div>
                                                                    {/foreach}
                                                            </div>
                                                    </div>
@@ -98,26 +98,26 @@
                                                    <div class="selectfield">
                                                            <div class="inner">
                                                            </div>
-                                                           <input type="hidden" name="year" value="">
+                                                           <input type="hidden" name="year" value="" />
                                                            <div class="options">
-                                                                   <div>----<input name="year_" type="hidden" value="0"></div>
+                                                                   <div>----<input name="year_" type="hidden" value="0" /></div>
                                                                    {foreach from=$year_list item=year}
-                                                                        <div>{$year}<input name="year_" type="hidden" value="{$year}"></div>
+                                                                        <div>{$year}<input name="year_" type="hidden" value="{$year}" /></div>
                                                                    {/foreach}
                                                            </div>
                                                    </div>
                                                    Электронная почта
                                                    <div class="textfield">
-                                                           <input type="text" name="email" value="">
+                                                           <input type="text" name="email" value="" />
                                                    </div>
                                                    <div class="clink">
-                                                           <input type="reset" value="Очистить все">
+                                                           <input type="reset" value="Очистить все" />
                                                    </div>
                                            </div>
                                            <div class="clear"></div>
                                            <div class="submit">
                                                    <input type="hidden" value="send" name="send" id="send" style="display:none;" />
-                                                   <input type="submit" value="Отправить">
+                                                   <input type="submit" value="Отправить" />
                                            </div>
                                            </form>
 {/if}

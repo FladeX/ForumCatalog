@@ -68,7 +68,7 @@ function category_list($tags, $catid)
 		}
 		elseif ($tags == "div")
 		{
-			$category_list .= "								<div>" . $result_row['title'] . "<input name=\"category_\" type=\"hidden\" value=\"" . $result_row['id'] . "\"></div>\n";
+			$category_list .= "								<div>" . $result_row['title'] . "<input name=\"category_\" type=\"hidden\" value=\"" . $result_row['id'] . "\" /></div>\n";
 		}
 		elseif ($tags == "td")
 		{
@@ -123,11 +123,11 @@ function category_list($tags, $catid)
 			{
 				if ($catid != $result2_row['id'])
 				{
-					$category_list .= "								<div>--- " . $result2_row['title'] . "<input name=\"category_\" type=\"hidden\" value=\"" . $result2_row['id'] . "\"></div>\n";
+					$category_list .= "								<div>--- " . $result2_row['title'] . "<input name=\"category_\" type=\"hidden\" value=\"" . $result2_row['id'] . "\" /></div>\n";
 				}
 				else
 				{
-					$category_list .= "								<div class=\"selected\">--- " . $result2_row['title'] . "<input name=\"category_\" type=\"hidden\" value=\"" . $result2_row['id'] . "\"></div>\n";
+					$category_list .= "								<div class=\"selected\">--- " . $result2_row['title'] . "<input name=\"category_\" type=\"hidden\" value=\"" . $result2_row['id'] . "\" /></div>\n";
 				}
 			}
 			elseif ($tags == "li")

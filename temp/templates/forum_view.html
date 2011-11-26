@@ -38,7 +38,7 @@
             <div class="csbox">
                     <div class="box_top">
                             <div class="box_bottom">
-                                    <span>Тематика форума</span><br>
+                                    <span>Тематика форума</span><br />
                                     {$forum.category}
                             </div>
                     </div>
@@ -46,7 +46,7 @@
             <div class="csbox">
                     <div class="box_top">
                             <div class="box_bottom">
-                                    <span>Просмотры</span><br>
+                                    <span>Просмотры</span><br />
                                     {$forum.views}
                             </div>
                     </div>
@@ -54,7 +54,7 @@
             <div class="csbox">
                     <div class="box_top">
                             <div class="box_bottom">
-                                    <span>Движок форума:</span><br>
+                                    <span>Движок форума:</span><br />
                                     {$forum.engine}
                             </div>
                     </div>
@@ -62,14 +62,14 @@
             <div class="csbox">
                     <div class="box_top">
                             <div class="box_bottom">
-                                    <span>Год запуска</span><br>
+                                    <span>Год запуска</span><br />
                                     {$forum.year}
                             </div>
                     </div>
             </div>
             <div class="clear"></div>
             <div class="rating">
-                    <span class="a" onclick="rating('{$forum.id}', 'minus')"><img src="/temp/images/rating_minus.jpg" alt="Уменьшить рейтинг форума"></span>
+                    <span class="a" onclick="rating('{$forum.id}', 'minus')"><img src="/temp/images/rating_minus.jpg" alt="Уменьшить рейтинг форума" /></span>
                     {if $forum.rating > 0}
                         <span class="number" id="number" style="color:#00bb00;">{$forum.rating}</span>
                     {elseif $forum.rating < 0}
@@ -78,7 +78,7 @@
                         <span class="number" id="number">{$forum.rating}</span>
                     {/if}
 
-                    <span class="a" onclick="rating('{$forum.id}', 'plus')"><img src="/temp/images/rating_plus.jpg" alt="Увеличить рейтинг форума"></span><br>
+                    <span class="a" onclick="rating('{$forum.id}', 'plus')"><img src="/temp/images/rating_plus.jpg" alt="Увеличить рейтинг форума" /></span><br />
                     Рейтинг
                     <div id="rating_message"></div>
             </div>
