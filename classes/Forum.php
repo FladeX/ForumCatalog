@@ -660,7 +660,7 @@ class Forum {
                 $row = 0;
 		while ($result_row = mysql_fetch_array($result, MYSQL_ASSOC)) {
                         $recent_forum[$row]['id'] = $result_row['id'];
-                        $recent_forum[$row]['title'] = htmlspecialchars(get_magic_quotes_gpc() ? substr(stripslashes($result_row['title']), 0, 60) : substr($result_row['title'], 0, 50));
+                        $recent_forum[$row]['title'] = htmlspecialchars(get_magic_quotes_gpc() ? mb_substr(stripslashes($result_row['title']), 0, 30) : mb_substr($result_row['title'], 0, 33));
                         $row++;
 		}
 
