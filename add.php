@@ -5,7 +5,7 @@
 * author: Max Istlyaev aka FladeX
 * e-mail: FladeX@yandex.ru
 * file: add.php
-* last update: 2011.11.13
+* last update: 2011.11.26
 **/
 include('config.php');
 include('db.php');
@@ -30,11 +30,11 @@ $send = (isset($_POST['send']) ? $_POST['send'] : "");
 if ($send == "send") {
 	$data_name			= (isset($_POST['name']) ? (string) $_POST['name'] : "");
 	$data_url			= (isset($_POST['url']) ? (string) $_POST['url'] : "");
-	$data_description	= (isset($_POST['description']) ? (string) $_POST['description'] : "");
-	$data_engine		= (isset($_POST['engine']) ? (string) $_POST['engine'] : "");
-	$data_portal		= (isset($_POST['portal']) ? (int) $_POST['portal'] : "");
+	$data_description		= (isset($_POST['description']) ? (string) $_POST['description'] : "");
+	$data_engine			= (isset($_POST['engine']) ? (string) $_POST['engine'] : "");
+	$data_portal			= (isset($_POST['portal']) ? (int) $_POST['portal'] : "");
 	$data_cms			= (isset($_POST['cms']) ? (string) $_POST['cms'] : "");
-	$data_category		= (isset($_POST['category']) ? (int) $_POST['category'] : "");
+	$data_category			= (isset($_POST['category']) ? (int) $_POST['category'] : "");
 	$data_year			= (isset($_POST['year']) ? (int) $_POST['year'] : "");
 	$data_email			= (isset($_POST['email']) ? (string) $_POST['email'] : "");
 	$data_abq			= (isset($_POST['abq']) ? (string) $_POST['abq'] : "");
@@ -54,6 +54,7 @@ if ($send == "send") {
 	$validate = $forum->add_forum($data_name, $data_url, $data_description, $data_engine, $data_portal, $data_cms, $data_category, $data_year, $data_email, $data_rss, $data_abq);
 }
 else {
+	$validate = false;
         $category_list = category_list("div", 0);
         $year_list = array();
         for ($i = 1998; $i <= date('Y'); $i++) {
@@ -119,10 +120,20 @@ else {
 }
 
 $smarty->assign('title', 'Добавление форума');
-$smarty->assign('category_list', $category_list);
-$smarty->assign('year_list', $year_list);
-$smarty->assign('engines', $engines);
-$smarty->assign('cms', $cms);
+
+if (isset($category_list)) {
+	$smarty->assign('category_list', $category_list);
+}
+if (isset($year_list)) {
+	$smarty->assign('year_list', $year_list);
+}
+if (isset($engines)) {
+	$smarty->assign('engines', $engines);
+}
+if (isset($cms)) {
+	$smarty->assign('cms', $cms);
+}
+
 $smarty->assign('recent_forums', $recent_forums);
 $smarty->assign('validate', $validate);
 $smarty->assign('sape_links', $sape_links);

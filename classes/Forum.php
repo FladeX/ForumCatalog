@@ -5,7 +5,7 @@
 * author: Max Istlyaev aka FladeX
 * e-mail: FladeX@yandex.ru
 * file: classes/Forum.php
-* last update: 2011.10.08
+* last update: 2011.11.26
 **/
 class Forum {
 
@@ -263,9 +263,9 @@ class Forum {
 
 	private function is_category_invalid($category) { // проверяем правильной указания категории для форума
 		global $dbprefix;
-		$result = "";
+		$validate_result = "";
 		if ($category == "") {
-			$result .= "Вы не указали тематику форума.<br />\n";
+			$validate_result .= "Вы не указали тематику форума.<br />\n";
 		}
 		else {
 			$sql = "SELECT *
@@ -279,11 +279,11 @@ class Forum {
 			$result_row = mysql_fetch_array($result, MYSQL_ASSOC);
 			if (strlen($result_row['title']) <= 2)
 			{
-				$result .= "Вы указали некорректную тематику форума.<br />\n";
+				$validate_result .= "Вы указали некорректную тематику форума.<br />\n";
 			}
 		}
 
-		return $result;
+		return $validate_result;
 	}
 
 	private function is_year_invalid($year) { // проверяем корректность указанного года запуска форума
@@ -313,11 +313,10 @@ class Forum {
 
 	private function is_email_invalid($email) { // проверяем валидность e-mail
 		$result = "";
-		if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)+$", $email)) {
+		if (!mb_ereg("^[a-z0-9]+@[a-z0-9]+\.[a-z0-9]{2,4}$", strtolower($email))) {
 			$result .= "Вы указали некорректный e-mail адрес.<br />\n";
-		}
-		else {
-			list($alias, $domain) = split("@", $email);
+		} else {
+			list($alias, $domain) = mb_split("@", $email);
 			if (!checkdnsrr($domain, "MX")) {
 				$result .= "Вы указали несуществующий e-mail адрес.<br />\n";
 			}
@@ -344,7 +343,7 @@ class Forum {
 		//	if ($abq != "Григорий Перельман") 2010.06.11
 		//	if ($abq != "Жак-Ив Кусто") 2010.07.13
 		if ($abq != "Диего Форлан") {
-			$result .= "Вы указали неправильный <a href=\"http://forumadmins.ru/viewtopic.php?f=14&t=100&r=2\" target=\"_blank\">шифр каталога</a>. Возможно, вы — робот.<br />\n";
+			$result .= "Вы указали неправильный <a href=\"http://forumadmins.ru/viewtopic.php?f=14&amp;t=100&amp;r=2\" target=\"_blank\">шифр каталога</a>. Возможно, вы — робот.<br />\n";
 		}
 
 		return $result;
@@ -370,6 +369,7 @@ class Forum {
 
 	public function add_forum($title, $url, $description, $engine, $portal, $cms, $category, $year, $email, $rss, $abq) { // добавляем форум в базу
 		global $dbprefix;
+		$validate = '';
 
 		if ($this->validate($title, $url, $description, $engine, $portal, $cms, $category, $year, $email, $rss, $abq) == "") {
 			// Добавление форума в базу данных
@@ -380,8 +380,7 @@ class Forum {
 			if (!$result) {
 				die("Невозможно исполнить запрос к базе данных: <br />" . mysql_error());
 			}
-                        $validate = '';
-			$this->email("add", $data_email);
+			$this->email("add", $email);
 			//forum_logo($data_id, $data_url);
 		}
 		else {
