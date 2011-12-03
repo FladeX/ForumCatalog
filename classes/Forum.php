@@ -5,7 +5,7 @@
 * author: Max Istlyaev aka FladeX
 * e-mail: FladeX@yandex.ru
 * file: classes/Forum.php
-* last update: 2011.11.26
+* last update: 2011.12.03
 **/
 class Forum {
 
@@ -21,90 +21,13 @@ class Forum {
 	}
 
 	private function engine($engine) { // преобразовываем движок для нормального отображения
-		switch($engine)
-		{
-			case "phpbb2":
-				$forum = "phpBB 2.x";
-				break;
-			case "phpbb3":
-				$forum = "phpBB 3.x";
-				break;
-			case "ipb1":
-				$forum = "IPB 1.x";
-				break;
-			case "ipb2":
-				$forum = "IPB 2.x";
-				break;
-			case "ipb3":
-				$forum = "IPB 3.x";
-				break;
-			case "smf1":
-				$forum = "SMF 1.x";
-				break;
-			case "smf2":
-				$forum = "SMF 2.x";
-				break;
-			case "vb1":
-				$forum = "vBulletin 1.x";
-				break;
-			case "vb2":
-				$forum = "vBulletin 2.x";
-				break;
-			case "vb3":
-				$forum = "vBulletin 3.x";
-				break;
-			case "vb4":
-				$forum = "vBulletin 4.x";
-				break;
-			case "xen":
-				$forum = "XenForo";
-				break;
-			case "punbb":
-				$forum = "punBB";
-				break;
-			case "dle":
-				$forum = "DLEforum";
-				break;
-			case "exbb":
-				$forum = "ExBB";
-				break;
-			case "yabb":
-				$forum = "YaBB";
-				break;
-			case "vanilla":
-				$forum = "Vanilla";
-				break;
-			case "bbpress":
-				$forum = "bbPress (Wordpress)";
-				break;
-			case "pybb":
-				$forum = "PyBB";
-				break;
-			case "ucoz":
-				$forum = "UcoZ";
-				break;
-			case "fluxbb":
-				$forum = "FluxBB";
-				break;
-			case "discuz":
-				$forum = "Discuz";
-				break;
-			case "borda.ru":
-				$forum = "Borda.ru / forum24.ru";
-				break;
-			case "autobb":
-				$forum = "AutoBB (Joomla)";
-				break;
-			case "diy":
-				$forum = "Самописный движок";
-				break;
-			case "other":
-				$forum = "Другой вариант";
-				break;
-			default:
-				$forum = "";
-				break;
+		global $config;
+		if (in_array($engine, $config['engines'])) {
+			$forum = $config['engines'][$engine];
+		} else {
+			$forum = "";
 		}
+
 		return $forum;
 	}
 
@@ -233,9 +156,9 @@ class Forum {
 	}
 
 	private function is_engine_invalid($engine) { // проверяем корректность указанного движка форума
+		global $config;
 		$result = "";
-		$engines = array("phpbb2", "phpbb3", "ipb1", "ipb2", "ipb3", "smf1", "smf2", "vb1", "vb2", "vb3", "vb4", "xen", "punbb", "dle", "exbb", "yabb", "vanilla", "bbpress", "pybb", "ucoz", "fluxbb", "diskuz", "borda.ru", "autobb", "diy", "other");
-		if (!in_array($engine, $engines)) {
+		if (!in_array($engine, $config['engines'])) {
 			$result = "Вы указали некорректный движок форума.<br />\n";
 		}
 
@@ -252,9 +175,9 @@ class Forum {
 	}
 
 	private function is_cms_invalid($cms) { // проверяем корректность указанной cms
+		global $config;
 		$result = "";
-		$cms_list = array("none", "danneo", "dle", "drupal", "e107", "hostcms", "instantcms", "instantsite", "joomla", "joostina", "klarnetcms", "kasselercms", "modx", "netcat", "php-fusion", "php-nuke", "phpshop", "runcms", "slaed", "seditio", "typo3", "twilight", "umi", "wordpress");
-		if (!in_array($cms, $cms_list)) {
+		if (!in_array($cms, $config['cms'])) {
 			$result .= "Вы некорректно указали интеграцию с сайтом.<br />\n";
 		}
 
@@ -287,12 +210,9 @@ class Forum {
 	}
 
 	private function is_year_invalid($year) { // проверяем корректность указанного года запуска форума
+		global $config;
 		$result = "";
-		$years = array();
-		for ($i = 1998; $i <= date('Y'); $i++) {
-			array_push($years, $i);
-		}
-		if (!in_array($year, $years)) {
+		if (!in_array($year, $config['years'])) {
 			$result .= "Вы указали некорректный год запуска форума.<br />\n";
 		}
 
@@ -326,23 +246,9 @@ class Forum {
 	}
 
 	private function is_abq_invalid($abq) { // проверяем капчу
+		global $config;
 		$result = "";
-		/*	if (($abq != "Путин") &&
-				($abq != "путин") &&
-				($abq != "ПУТИН") &&
-				($abq != "Медведев") &&
-				($abq != "медведев") &&
-				($abq != "МЕДВЕДЕВ") &&
-				($abq != "Ельцин") &&
-				($abq != "ельцин") &&
-				($abq != "ЕЛЬЦИН"))
-			{*/
-		//	if ($abq != "Джеймс Кэмерон") 2010.02.13
-		//	if ($abq != "Виктор Янукович") 2010.03.02
-		//	if ($abq != "Тим Бертон") 2010.03.29
-		//	if ($abq != "Григорий Перельман") 2010.06.11
-		//	if ($abq != "Жак-Ив Кусто") 2010.07.13
-		if ($abq != "Диего Форлан") {
+		if ($abq != $config['abq']) {
 			$result .= "Вы указали неправильный <a href=\"http://forumadmins.ru/viewtopic.php?f=14&amp;t=100&amp;r=2\" target=\"_blank\">шифр каталога</a>. Возможно, вы — робот.<br />\n";
 		}
 
@@ -422,14 +328,11 @@ class Forum {
 		// Вывод полученного результата
 		$result_row = mysql_fetch_array($result, MYSQL_ASSOC);
 		if (($result_row['active'] != 1) || ($result_row['title'] == '')) {
-			//header('refresh: 3; url=http://forumcatalog.ru/');
-			//catalog_header('404');
                         $forum_view['id'] = 0;
                         $forum_view['title'] = 'Форум не найден';
                         return $forum_view;
 		}
 		else {
-			//catalog_header($result_row['title']);
 			if ($send == 'send') {
 				if (($type == 'plus') || ($type == 'minus')) {
 					// код для определения ip с учетом прокси взят с http://www.tigir.com/php.htm
@@ -545,7 +448,7 @@ class Forum {
 					// From here on, we're no longer using data from the feed.
 				}
 			}
-                        $forum_view['rss_data'] = $rss_data;
+                        $forum_view['rss_data'] = (isset($rss_data) ? $rss_data : 0);
 		}
                 return $forum_view;
 	}

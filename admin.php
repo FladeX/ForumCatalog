@@ -5,7 +5,7 @@
 * author: Max Istlyaev aka FladeX
 * e-mail: FladeX@yandex.ru
 * file: admin.php
-* last update: 2011.11.13
+* last update: 2011.12.03
 **/
 session_start();
 include('config.php');
@@ -15,16 +15,18 @@ include('classes/Forum.php');
 include('classes/Category.php');
 include('classes/smarty/Smarty.class.php');
 
+global $config;
 global $sape;
+
 $sape_links = $sape->return_links();
 
 $forum = new Forum;
 $smarty = new Smarty();
 
-$smarty->template_dir = SMARTY_TEMPLATE_DIR;
-$smarty->compile_dir = SMARTY_COMPILE_DIR;
-$smarty->config_dir = SMARTY_CONFIG_DIR;
-$smarty->cache_dir = SMARTY_CACHE_DIR;
+$smarty->template_dir = $config['smarty_template_dir'];
+$smarty->compile_dir = $config['smarty_compile_dir'];
+$smarty->config_dir = $config['smarty_config_dir'];
+$smarty->cache_dir = $config['smarty_cache_dir'];
 
 $recent_forums = $forum->display_recent_forums();
 
@@ -217,70 +219,12 @@ switch ($mode)
 			$year_list[] = $i;
 		}
 
-		$cms = array(
-			'none' => 'Нет интеграции с cms',
-			'danneo' => 'Danneo CMS',
-			'dle' => 'DLE (DataLife Engine)',
-			'drupal' => 'Drupal',
-			'e107' => 'e107',
-			'hostcms' => 'Host CMS',
-			'instantcms' => 'Instant CMS',
-			'instantsite' => 'Instant Site',
-			'joomla' => 'Joomla',
-			'joostina' => 'Joostina',
-			'klarnetcms' => 'Klarnet CMS',
-			'kasselercms' => 'Kasseler CMS',
-			'modx' => 'ModX',
-			'netcat' => 'NetCat',
-			'php-fusion' => 'php-fusion',
-			'php-nuke' => 'PHP-Nuke',
-			'phpshop' => 'PHPShop',
-			'runcms' => 'RunCms',
-			'slaed' => 'Slaed CMS',
-			'seditio' => 'Seditio CMS',
-			'typo3' => 'TYPO3',
-			'twilight' => 'Twilight CMS',
-			'umi' => 'UMI CMS',
-			'wordpress' => 'Wordpress',
-			'diy' => 'Самописная cms',
-			'other' => 'Другая cms',
-		);
-
-		$engines = array(
-			'phpbb2' => 'phpBB 2.x',
-			'phpbb3' => 'phpBB 3.x',
-			'ipb1' => 'IPB 1.x',
-			'ipb2' => 'IPB 2.x',
-			'ipb3' => 'IPB 3.x',
-			'smf1' => 'SMF 1.x',
-			'smf2' => 'SMF 2.x',
-			'vb1' => 'vBulletin 1.x',
-			'vb2' => 'vBulletin 2.x',
-			'vb3' => 'vBulletin 3.x',
-			'vb4' => 'vBulletin 4.x',
-			'xen' => 'XenForo',
-			'punbb' => 'punBB',
-			'dle' => 'DLE Forum',
-			'exbb' => 'ExBB',
-			'yabb' => 'YaBB',
-			'vanilla' => 'Vanilla',
-			'bbpress' => 'bbPress (Wordpress)',
-			'pybb' => 'PyBB',
-			'ucoz' => 'UcoZ',
-			'fluxbb' => 'FluxBB',
-			'discuz' => 'Discuz',
-			'borda.ru' => 'Borda.ru / forum24.ru',
-			'autobb' => 'AutoBB (Joomla)',
-			'diy' => 'Самописный движок',
-			'other' => 'Другой вариант',
-		);
-
 		$smarty->assign('title', 'Редактирование форума');
 		$smarty->assign('forum', $forum);
 		$smarty->assign('years', $year_list);
 		$smarty->assign('category_list', $category_list);
-		$smarty->assign('cms_list', $cms);
-		$smarty->assign('engines', $engines);
+		$smarty->assign('cms_list', $config['cms']);
+		$smarty->assign('engines', $config['engines']);
 		$smarty->assign('recent_forums', $recent_forums);
 		$smarty->assign('sape_links', $sape_links);
 		$smarty->display('admin_forum_edit.html');

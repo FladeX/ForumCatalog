@@ -5,7 +5,7 @@
 * author: Max Istlyaev aka FladeX
 * e-mail: FladeX@yandex.ru
 * file: refusal.php
-* last update: 2011.11.13
+* last update: 2011.12.03
 **/
 include('config.php');
 include('db.php');
@@ -13,14 +13,16 @@ include('functions.php');
 include('classes/Forum.php');
 include('classes/smarty/Smarty.class.php');
 
+global $config;
+global $sape;
+
 $smarty = new Smarty();
 
-$smarty->template_dir = SMARTY_TEMPLATE_DIR;
-$smarty->compile_dir = SMARTY_COMPILE_DIR;
-$smarty->config_dir = SMARTY_CONFIG_DIR;
-$smarty->cache_dir = SMARTY_CACHE_DIR;
+$smarty->template_dir = $config['smarty_template_dir'];
+$smarty->compile_dir = $config['smarty_compile_dir'];
+$smarty->config_dir = $config['smarty_config_dir'];
+$smarty->cache_dir = $config['smarty_cache_dir'];
 
-global $sape;
 $sape_links = $sape->return_links();
 
 $forum = new Forum;

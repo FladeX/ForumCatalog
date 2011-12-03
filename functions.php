@@ -1,5 +1,16 @@
 <?php
+/**
+* project: ForumCatalog
+* version: 2.1
+* author: Max Istlyaev aka FladeX
+* e-mail: FladeX@yandex.ru
+* file: function.php
+* last update: 2011.12.03
+**/
+include('config.php');
 include('db.php');
+
+global $config;
 // sape begin
 global $sape;
 if (!defined('_SAPE_USER')){
@@ -172,90 +183,13 @@ function email($type, $email)
 }
 function engine($engine)
 {
-	switch($engine)
-	{
-		case "phpbb2":
-			$forum = "phpBB 2.x";
-			break;
-		case "phpbb3":
-			$forum = "phpBB 3.x";
-			break;
-		case "ipb1":
-			$forum = "IPB 1.x";
-			break;
-		case "ipb2":
-			$forum = "IPB 2.x";
-			break;
-		case "ipb3":
-			$forum = "IPB 3.x";
-			break;
-		case "smf1":
-			$forum = "SMF 1.x";
-			break;
-		case "smf2":
-			$forum = "SMF 2.x";
-			break;
-		case "vb1":
-			$forum = "vBulletin 1.x";
-			break;
-		case "vb2":
-			$forum = "vBulletin 2.x";
-			break;
-		case "vb3":
-			$forum = "vBulletin 3.x";
-			break;
-		case "vb4":
-			$forum = "vBulletin 4.x";
-			break;
-		case "xen":
-			$forum = "XenForo";
-			break;
-		case "punbb":
-			$forum = "punBB";
-			break;
-		case "dle":
-			$forum = "DLEforum";
-			break;
-		case "exbb":
-			$forum = "ExBB";
-			break;
-		case "yabb":
-			$forum = "YaBB";
-			break;
-		case "vanilla":
-			$forum = "Vanilla";
-			break;
-		case "bbpress":
-			$forum = "bbPress (Wordpress)";
-			break;
-		case "pybb":
-			$forum = "PyBB";
-			break;
-		case "ucoz":
-			$forum = "UcoZ";
-			break;
-		case "fluxbb":
-			$forum = "FluxBB";
-			break;
-		case "discuz":
-			$forum = "Discuz";
-			break;
-		case "borda.ru":
-			$forum = "Borda.ru / forum24.ru";
-			break;
-		case "autobb":
-			$forum = "AutoBB (Joomla)";
-			break;
-		case "diy":
-			$forum = "Самописный движок";
-			break;
-		case "other":
-			$forum = "Другой вариант";
-			break;
-		default:
-			$forum = "";
-			break;
+	global $config;
+	if (in_array($engine, $config['engines'])) {
+		$forum = $config['engines'][$engine];
+	} else {
+		$forum = "";
 	}
+
 	return $forum;
 }
 function catalog_header($title)
