@@ -1,5 +1,13 @@
 <?php
-include('temp/header.tpl');
+/**
+* project: ForumCatalog
+* version: 2.1
+* author: Max Istlyaev aka FladeX
+* e-mail: FladeX@yandex.ru
+* file: charts.php
+* last update: 2011.12.04
+**/
+include('config.php');
 include('db.php');
 include('functions.php');
 // Соединение с базой данных
@@ -36,6 +44,7 @@ $punbb = 0;
 $dle = 0;
 $exbb = 0;
 $yabb = 0;
+$year2011 = 0;
 $year2010 = 0;
 $year2009 = 0;
 $year2008 = 0;
@@ -105,6 +114,9 @@ while ($result_row = mysql_fetch_array($result, MYSQL_ASSOC))
 	}
 	switch ($result_row['year'])
 	{
+		case "2011":
+			$year2011 += 1;
+			break;
 		case "2010":
 			$year2010 += 1;
 			break;
@@ -155,9 +167,9 @@ $Test->Render("images/temp/example10.png");
 // Dataset definition
 $DataSet = new pData;
 //$DataSet->AddPoint(array(10,2,3,5,3),"Serie1");
-$DataSet->AddPoint(array($year2010,$year2009,$year2008,$year2007,$year2006),"Serie1");
+$DataSet->AddPoint(array($year2011, $year2010,$year2009,$year2008,$year2007,$year2006),"Serie1");
 //$DataSet->AddPoint(array("vBulletin","phpBB 2.x","phpBB 3.x","IPB 2.x","punBB"),"Serie2");
-$DataSet->AddPoint(array("2010","2009","2008","2007","< 2006"),"Serie2");
+$DataSet->AddPoint(array("2011", "2010","2009","2008","2007","< 2006"),"Serie2");
 $DataSet->AddAllSeries();
 $DataSet->SetAbsciseLabelSerie("Serie2");
 
@@ -178,5 +190,4 @@ $Test->Render("images/temp/years.png");
 
 // Закрытие соединения с mysql
 mysql_close($connection);
-include('temp/footer.tpl');
 ?>
