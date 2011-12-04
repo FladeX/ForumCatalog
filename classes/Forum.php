@@ -588,6 +588,7 @@ class Forum {
 		while ($result_row = mysql_fetch_array($result, MYSQL_ASSOC))
 		{
 			$admin_forum_list[$row]['id'] = $result_row['id'];
+			$admin_forum_list[$row]['url'] = $result_row['url'];
 			$admin_forum_list[$row]['title'] = page_html($result_row['title']);
 			$admin_forum_list[$row]['description'] = page_html($result_row['description']);
 			$admin_forum_list[$row]['year'] = $result_row['year'];
