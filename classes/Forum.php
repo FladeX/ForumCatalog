@@ -603,6 +603,25 @@ class Forum {
 		return $admin_forum_list;
 	}
 
+	public function save_admin_forum($forum) { // сохраняем форум в админке
+		global $dbprefix;
+
+		$save_result = false;
+		// Сохранение изменений в базе данных
+		$sql = "UPDATE " . $dbprefix . "forums
+				SET title = '" . $forum['name'] . "', url = '" . $forum['url'] . "', description = '" . $forum['description'] . "', engine = '" . $forum['engine'] . "', portal = '" . $forum['portal'] . "', cms = '" . $forum['cms'] . "', cat = '" . $forum['category'] . "', year = '" . $forum['year'] . "', email = '" . $forum['email'] . "', active = '" . $forum['active'] . "', refusal = '" . $forum['refusal'] . "', rss = '" . $forum['rss'] . "'
+				WHERE id = " . $forum['id'];
+		$result = mysql_query($sql);
+		if (!$result) {
+			die("Невозможно исполнить запрос к базе данных: <br />" . mysql_error());
+			$save_result = false;
+		} else {
+			$save_result = true;
+		}
+
+		return $save_result;
+	}
+
 	public function edit_admin_forum($id) { // редактируем форум в админке
 		global $dbprefix;
 

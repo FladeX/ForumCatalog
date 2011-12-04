@@ -230,18 +230,28 @@ switch ($mode)
 		$smarty->display('admin_forum_edit.html');
 		break;
 	case "save":
-		// Сохранение изменений в базе данных
-		$sql = "UPDATE " . $dbprefix . "forums
-				SET title = '" . $_POST['name'] . "', url = '" . $_POST['url'] . "', description = '" . $_POST['description'] . "', engine = '" . $_POST['engine'] . "', portal = '" . $_POST['portal'] . "', cms = '" . $_POST['cms'] . "', cat = '" . $_POST['category'] . "', year = '" . $_POST['year'] . "', email = '" . $_POST['email'] . "', active = '" . $_POST['active'] . "', refusal = '" . $_POST['refusal'] . "', rss = '" . $_POST['rss'] . "'
-				WHERE id = " . $_POST['id'];
-		$result = mysql_query($sql);
-		if (!$result)
-		{
-			die("Невозможно исполнить запрос к базе данных: <br />" . mysql_error());
-		}
-		echo "					<div class=\"news\">\n";
-		echo "			<h1>Редактирование форума</h1>\n";
-		echo "					<p>Форум успешно отредактирован!</p>\n";
+		$forum_data = array();
+		$forum_data['id'] = $_POST['id'];
+		$forum_data['name'] = $_POST['name'];
+		$forum_data['url'] = $_POST['url'];
+		$forum_data['description'] = $_POST['description'];
+		$forum_data['engine'] = $_POST['engine'];
+		$forum_data['portal'] = $_POST['portal'];
+		$forum_data['cms'] = $_POST['cms'];
+		$forum_data['category'] = $_POST['category'];
+		$forum_data['year'] = $_POST['year'];
+		$forum_data['email'] = $_POST['email'];
+		$forum_data['active'] = isset($_POST['active']) ? $_POST['active'] : 0;
+		$forum_data['refusal'] = isset($_POST['refusal']) ? $_POST['refusal'] : '';
+		$forum_data['rss'] = isset($_POST['rss']) ? $_POST['rss'] : '';
+
+		$admin_forum_save = $forum->save_admin_forum($forum_data);
+
+		$smarty->assign('title', 'Редактирование форума');
+		$smarty->assign('save_result', $admin_forum_save);
+		$smarty->assign('recent_forums', $recent_forums);
+		$smarty->assign('sape_links', $sape_links);
+		$smarty->display('admin_forum_save.html');
 		break;
 	default:
 		$admin_forum_list = $forum->display_admin_forum_list();

@@ -1,0 +1,13 @@
+{include file="header.html" title=$title}
+
+<a href="/admin/">Администраторский раздел</a>, <a href="/admin/?mode=category">Список категорий</a>, <a href="/admin/?mode=category&amp;option=create">Создать категорию</a>
+
+<div class="news">
+	<h1>Редактирование форума</h1>
+	{if $save_result}
+	<p>Форум успешно отредактирован!</p>
+	{else}
+	<p>Во время редактирования форума произошла ошибка!</p>
+	{/if}
+
+{include file="footer.html"}
