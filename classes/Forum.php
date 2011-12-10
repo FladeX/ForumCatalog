@@ -655,5 +655,64 @@ class Forum {
 
 		return $forum;
 	}
+
+	public function get_all_forum_count() { // получаем количество форумов в базе
+		global $dbprefix;
+		$forum_count = 0;
+
+		// Выбор всех форумов из базы данных
+		$sql = "SELECT count(*)
+				FROM " . $dbprefix . "forums";
+		$result = mysql_query($sql);
+		if (!$result) {
+			die("Невозможно исполнить запрос к базе данных: <br />" . mysql_error());
+		}
+		// Вывод полученного результата
+		if ($result_row = mysql_fetch_array($result)) {
+			$forum_count = $result_row[0];
+		}
+
+		return $forum_count;
+	}
+
+	public function get_accepted_forum_count() { // получаем количество принятых форумов
+		global $dbprefix;
+		$forum_count = 0;
+
+		// Выбор всех форумов из базы данных
+		$sql = "SELECT count(*)
+				FROM " . $dbprefix . "forums
+				WHERE active = 1";
+		$result = mysql_query($sql);
+		if (!$result) {
+			die("Невозможно исполнить запрос к базе данных: <br />" . mysql_error());
+		}
+		// Вывод полученного результата
+		if ($result_row = mysql_fetch_array($result)) {
+			$forum_count = $result_row[0];
+		}
+
+		return $forum_count;
+	}
+
+	public function get_refusal_forum_count() { // получаем количество непринятых форумов
+		global $dbprefix;
+		$forum_count = 0;
+
+		// Выбор всех форумов из базы данных
+		$sql = "SELECT count(*)
+				FROM " . $dbprefix . "forums
+				WHERE refusal != ''";
+		$result = mysql_query($sql);
+		if (!$result) {
+			die("Невозможно исполнить запрос к базе данных: <br />" . mysql_error());
+		}
+		// Вывод полученного результата
+		if ($result_row = mysql_fetch_array($result)) {
+			$forum_count = $result_row[0];
+		}
+
+		return $forum_count;
+	}
 }
 ?>

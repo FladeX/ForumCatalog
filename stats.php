@@ -27,9 +27,15 @@ $sape_links = $sape->return_links();
 
 $forum = new Forum;
 $recent_forums = $forum->display_recent_forums();
+$all_forum_count = $forum->get_all_forum_count();
+$refusal_forum_count = $forum->get_refusal_forum_count();
+$accepted_forum_count = $forum->get_accepted_forum_count();
 
 $smarty->assign('title', 'Статистика форумов');
 $smarty->assign('recent_forums', $recent_forums);
+$smarty->assign('all_forum_count', $all_forum_count);
+$smarty->assign('refusal_forum_count', $refusal_forum_count);
+$smarty->assign('accepted_forum_count', $accepted_forum_count);
 $smarty->assign('sape_links', $sape_links);
 $smarty->display('statistics.html');
 ?>
